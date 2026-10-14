@@ -16,7 +16,7 @@ function smoke(route, data=standings) {
  return main.innerHTML;
 }
 const dashboard=smoke('dashboard');
-if(!dashboard.includes('Andrew')||!dashboard.includes('Awaiting 2026–27 results')) throw Error('Dashboard missing current or historical state');
+if(!dashboard.includes('Andrew')||!dashboard.includes('DRAFT LOCKED')||!dashboard.includes('mascot-grid')) throw Error('Dashboard missing current/historical state or mascots');
 const draft=smoke('draft');
 if((draft.match(/class="draft-card"/g)||[]).length !== 5) throw Error('Draft cards != 5');
 if((draft.match(/class="bet-row"/g)||[]).length !== 30) throw Error('Bet rows != 30');
@@ -30,5 +30,6 @@ const withResults=JSON.parse(JSON.stringify(standings));
 withResults.updatedAt='2026-11-01T13:00:00Z';
 withResults.source='Test fixture';
 for(const r of Object.values(withResults.teams)){r.wins=10;r.losses=5;}
-if(!smoke('dashboard',withResults).includes('Current leader'))throw Error('Live leaderboard failed');
-console.log('PASS 5 views, 30 picks, 30 historical bets, pre-season and live scoring');
+if(!smoke('dashboard',withResults).includes('CURRENT LEADER'))throw Error('Live leaderboard failed');
+for (const route of ['profiles','profile/Blake','profile/Coz','profile/Mark','profile/Coby','profile/Andy','rankings','race','rivalry']) {const rendered=smoke(route);if(!rendered || !rendered.includes('O/U') && !rendered.includes('Blake') && !rendered.includes('Blake'.toUpperCase()))throw Error('Route broken: '+route)}
+console.log('PASS 14 views + profiles, 30 picks, historical archive, pre-season and live scoring');

@@ -8,9 +8,11 @@
   <title>The Over/Under League · NBA 2026–27</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/neon.css?v=2">
   <script defer src="data/league.js"></script>
   <script defer src="data/history.js"></script>
   <script defer src="data/standings.js"></script>
+  <script defer src="data/snapshots.js"></script>
   <script defer src="assets/app.js"></script>
 </head>
 <body>
@@ -24,9 +26,13 @@
     </header>
     <nav class="navigation" aria-label="Main navigation">
       <a data-nav="dashboard" href="#dashboard"><span class="nav-icon">◈</span> Dashboard</a>
-      <a data-nav="draft" href="#draft"><span class="nav-icon">▦</span> The Draft</a>
+      <a data-nav="profiles" href="#profiles"><span class="nav-icon">◇</span> Players</a>
+      <a data-nav="draft" href="#draft"><span class="nav-icon">▦</span> Draft Picks</a>
+      <a data-nav="rankings" href="#rankings"><span class="nav-icon">▲</span> Rankings</a>
+      <a data-nav="race" href="#race"><span class="nav-icon">⌁</span> The Race</a>
+      <a data-nav="rivalry" href="#rivalry"><span class="nav-icon">⚔</span> Rivals</a>
       <a data-nav="teams" href="#teams"><span class="nav-icon">◉</span> Team Records</a>
-      <a data-nav="history" href="#history"><span class="nav-icon">★</span> Hall of Champions</a>
+      <a data-nav="history" href="#history"><span class="nav-icon">★</span> Champions</a>
       <a data-nav="guide" href="#guide"><span class="nav-icon">?</span> How It Works</a>
     </nav>
     <main id="content" tabindex="-1" aria-live="polite"></main>

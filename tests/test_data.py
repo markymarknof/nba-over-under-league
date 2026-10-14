@@ -32,6 +32,15 @@ class LeagueIntegrity(unittest.TestCase):
         for player in CONFIG['players']:
             self.assertEqual(sum(p['player']==player['name'] for p in CONFIG['picks']),6)
         self.assertTrue(all(p['side'] in ('OVER','UNDER') and isinstance(p['line'],float) for p in CONFIG['picks']))
+    def test_player_colours_and_mascots(self):
+        expected={'Blake':'#278fff','Coz':'#bc60ff','Mark':'#17e3a2','Coby':'#ff3d67','Andy':'#ffbd38'}
+        self.assertEqual({p['name']:p['color'] for p in CONFIG['players']},expected)
+        for name in expected:
+            self.assertTrue((ROOT/'assets'/'mascots'/(name.lower()+'.webp')).is_file())
+    def test_snapshots_start_empty_not_fabricated(self):
+        archive=load_json(ROOT/'data'/'snapshots.json')
+        self.assertEqual(archive['season'],2027)
+        self.assertEqual(archive['snapshots'],[])
     def test_corrected_bets(self):
         lookup={p['team']:p for p in CONFIG['picks']}
         self.assertEqual((lookup['PHX']['player'],lookup['PHX']['side'],lookup['PHX']['line']),('Blake','OVER',40.5))

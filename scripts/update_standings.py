@@ -174,6 +174,28 @@ def main():
         print(f'Validated all {len(incoming)} teams, {new_games//2} games. Dry-run; no files changed.')
     else:
         write_payload(payload)
+        # Preserve a daily championship-race snapshot of the actual projected margins.
+        if new_games > 0:
+            archive = load_json(ROOT/'data'/'snapshots.json')
+            picks = league['picks']
+            scores = {}
+            for player in league['players']:
+                margins = []
+                for pick in picks:
+                    if pick['player'] != player['name']:
+                        continue
+                    team_record = incoming[pick['team']]
+                    games = team_record['wins'] + team_record['losses']
+                    if games:
+                        projected = team_record['wins'] / games * league['gamesPerTeam']
+                        margins.append(projected - pick['line'] if pick['side']=='OVER' else pick['line'] - projected)
+                scores[player['name']] = round(sum(margins), 2) if margins else None
+            day = payload['updatedAt'][:10]
+            archive['snapshots'] = [x for x in archive['snapshots'] if x['date'] != day]
+            archive['snapshots'].append({'date': day, 'scores': scores})
+            archive['snapshots'] = sorted(archive['snapshots'], key=lambda x:x['date'])
+            (ROOT/'data'/'snapshots.json').write_text(json.dumps(archive, indent=2)+'\n', encoding='utf-8')
+            (ROOT/'data'/'snapshots.js').write_text('window.LEAGUE_SNAPSHOTS = '+json.dumps(archive, separators=(',',':'))+';\n', encoding='utf-8')
         print(f'Updated {len(incoming)} teams, {new_games//2} games at {payload["updatedAt"]}')
 
 

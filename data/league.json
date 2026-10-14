@@ -6,32 +6,32 @@
   "players": [
     {
       "name": "Blake",
-      "color": "#47a9ff",
-      "dark": "#16486f",
+      "color": "#278fff",
+      "dark": "#0b2967",
       "emblem": "🐀"
     },
     {
       "name": "Coz",
-      "color": "#ff6a85",
-      "dark": "#7f2841",
+      "color": "#bc60ff",
+      "dark": "#3d0f6d",
       "emblem": "🐺"
     },
     {
       "name": "Mark",
-      "color": "#b78bff",
-      "dark": "#543180",
+      "color": "#17e3a2",
+      "dark": "#07533f",
       "emblem": "🐻"
     },
     {
       "name": "Coby",
-      "color": "#f4bc60",
-      "dark": "#70502a",
+      "color": "#ff3d67",
+      "dark": "#671026",
       "emblem": "🦊"
     },
     {
       "name": "Andy",
-      "color": "#52d6a2",
-      "dark": "#14694f",
+      "color": "#ffbd38",
+      "dark": "#5f3608",
       "emblem": "🦅"
     }
   ],

@@ -60,3 +60,22 @@ Run `python -m unittest discover -s tests -v` — no extra Python packages neces
 - For an ordinary hobby website on a personal public repository, GitHub Pages and light Actions usage are available within GitHub Free's limits; usage caps and policies may change.
 - ESPN is an **unofficial public data provider**, not a guaranteed service; the last successful update remains visible if ESPN fails.
 - The site is not affiliated with the NBA, ESPN or its teams.
+
+## New arena redesign (2026–27)
+
+The refreshed site adds illustrated player identities, live colour-coded picks,
+individual player profiles, projected power rankings, head-to-head comparisons,
+a championship race chart, and the original Hall of Champions.
+
+**All stats are genuine:** cards deliberately remain unranked before the first
+NBA results are loaded. There are no simulated box scores, dates, standings,
+or historic rivalries on the public website.
+
+The `data/snapshots.json` and matching `.js` file store one daily projected
+score snapshot after standings change, allowing the Race page to draw actual
+historical movement over time. They are stored in GitHub with the rest of the
+static site, not in Blob or a database. Future seasons should archive their
+snapshots separately before resetting the season.
+
+Artwork under `assets/mascots/` is original AI-generated art created for this
+friends' competition; mascot cards aren't official NBA brands.

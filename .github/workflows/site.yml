@@ -68,10 +68,10 @@ jobs:
         run: python scripts/finalize_if_complete.py
       - name: Save validated standings and league history
         run: |
-          if ! git diff --quiet -- data/standings.json data/standings.js data/history.json data/history.js; then
+          if ! git diff --quiet -- data/standings.json data/standings.js data/history.json data/history.js data/snapshots.json data/snapshots.js; then
             git config user.name 'nba-league-bot'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add data/standings.json data/standings.js data/history.json data/history.js
+            git add data/standings.json data/standings.js data/history.json data/history.js data/snapshots.json data/snapshots.js
             git commit -m 'Refresh NBA records and league history'
             git push
           else
