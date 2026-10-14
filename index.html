@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080c18">
+  <meta name="description" content="The Over/Under League — 2026–27 NBA draft picks, automatic standings, and Hall of Champions.">
+  <title>The Over/Under League · NBA 2026–27</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="data/league.js"></script>
+  <script defer src="data/history.js"></script>
+  <script defer src="data/standings.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <a class="brand" href="#dashboard" aria-label="Over/Under League home">
+        <span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 48 48" width="29" height="29"><circle cx="24" cy="24" r="19" fill="none" stroke="currentColor" stroke-width="2.8"/><path d="M24 5v38M5 24h38M9.5 12c8 4 8 20 0 24M38.5 12c-8 4-8 20 0 24" fill="none" stroke="currentColor" stroke-width="2.4"/></svg></span>
+        <span class="brand-label">THE <b>O/U</b> LEAGUE<span class="brand-sub">NBA DRAFT COMPETITION</span></span>
+      </a>
+      <div class="header-right"><span class="header-season">2026 <span class="season-divider">/</span> 27</span><span class="live-pill" id="header-sync"><i class="pulse-dot"></i> AWAITING DATA</span></div>
+    </header>
+    <nav class="navigation" aria-label="Main navigation">
+      <a data-nav="dashboard" href="#dashboard"><span class="nav-icon">◈</span> Dashboard</a>
+      <a data-nav="draft" href="#draft"><span class="nav-icon">▦</span> The Draft</a>
+      <a data-nav="teams" href="#teams"><span class="nav-icon">◉</span> Team Records</a>
+      <a data-nav="history" href="#history"><span class="nav-icon">★</span> Hall of Champions</a>
+      <a data-nav="guide" href="#guide"><span class="nav-icon">?</span> How It Works</a>
+    </nav>
+    <main id="content" tabindex="-1" aria-live="polite"></main>
+    <footer class="site-footer"><span>THE O/U LEAGUE <span class="foot-diamond">◆</span> EST. 2025</span><span>Independent friends' competition · No affiliation with the NBA</span><span>Hosted as static files · No Blob storage</span></footer>
+  </div>
+</body>
+</html>

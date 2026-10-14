@@ -1,0 +1,104 @@
+name: Publish and update the O/U League
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Refresh from ESPN, or manually correct one team?'
+        type: choice
+        options: [espn, manual]
+        default: espn
+        required: true
+      team:
+        description: 'Manual only: team code, e.g. PHX'
+        required: false
+        type: string
+      wins:
+        description: 'Manual only: wins'
+        required: false
+        type: string
+      losses:
+        description: 'Manual only: losses'
+        required: false
+        type: string
+  schedule:
+    - cron: '17 0,6,12,18 * * *'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: nba-over-under-league
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Check out the independent hobby repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test draft and update logic
+        run: python -m unittest discover -s tests -v
+      - name: Refresh ESPN standings (safely preserves last good data if unavailable)
+        if: github.event_name != 'workflow_dispatch' || inputs.mode != 'manual'
+        continue-on-error: true
+        run: python scripts/update_standings.py
+      - name: Apply manual team correction when requested
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'manual'
+        env:
+          TEAM: ${{ inputs.team }}
+          WINS: ${{ inputs.wins }}
+          LOSSES: ${{ inputs.losses }}
+        run: |
+          if ! [[ "$WINS" =~ ^[0-9]+$ && "$LOSSES" =~ ^[0-9]+$ ]]; then
+            echo 'Manual wins and losses must be whole nonnegative numbers' >&2
+            exit 1
+          fi
+          python scripts/manual_update.py --team "$TEAM" --wins "$WINS" --losses "$LOSSES"
+      - name: Archive the champion automatically once all 30 teams finish 82 games
+        run: python scripts/finalize_if_complete.py
+      - name: Save validated standings and league history
+        run: |
+          if ! git diff --quiet -- data/standings.json data/standings.js data/history.json data/history.js; then
+            git config user.name 'nba-league-bot'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add data/standings.json data/standings.js data/history.json data/history.js
+            git commit -m 'Refresh NBA records and league history'
+            git push
+          else
+            echo 'Standings unchanged.'
+          fi
+      - name: Create clean public website folder
+        run: |
+          mkdir -p dist
+          cp index.html dist/
+          cp -R assets data dist/
+          touch dist/.nojekyll
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

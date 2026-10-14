@@ -1,0 +1,359 @@
+{
+  "seasons": [
+    {
+      "season": "2025–26",
+      "champion": "Andrew",
+      "score": 34.5,
+      "hits": 4,
+      "bets": 5,
+      "standings": [
+        {
+          "player": "Andrew",
+          "points": 34.5,
+          "hits": 4,
+          "bets": 5
+        },
+        {
+          "player": "Coz",
+          "points": 3.74,
+          "hits": 1,
+          "bets": 5
+        },
+        {
+          "player": "Mark",
+          "points": -6.5,
+          "hits": 2,
+          "bets": 5
+        },
+        {
+          "player": "Blake",
+          "points": -6.5,
+          "hits": 1,
+          "bets": 5
+        },
+        {
+          "player": "Coby",
+          "points": -11.5,
+          "hits": 1,
+          "bets": 5
+        },
+        {
+          "player": "Declan",
+          "points": -13.5,
+          "hits": 2,
+          "bets": 5
+        }
+      ],
+      "picks": [
+        {
+          "player": "Declan",
+          "team": "Timberwolves",
+          "side": "OVER",
+          "line": 50.5,
+          "wins": 49,
+          "losses": 33,
+          "projected": 49.0,
+          "margin": -1.5
+        },
+        {
+          "player": "Declan",
+          "team": "Lakers",
+          "side": "OVER",
+          "line": 47.5,
+          "wins": 53,
+          "losses": 29,
+          "projected": 53.0,
+          "margin": 5.5
+        },
+        {
+          "player": "Declan",
+          "team": "Warriors",
+          "side": "OVER",
+          "line": 45.5,
+          "wins": 37,
+          "losses": 45,
+          "projected": 37.0,
+          "margin": -8.5
+        },
+        {
+          "player": "Declan",
+          "team": "Kings",
+          "side": "OVER",
+          "line": 35.5,
+          "wins": 22,
+          "losses": 60,
+          "projected": 22.0,
+          "margin": -13.5
+        },
+        {
+          "player": "Declan",
+          "team": "Cavs",
+          "side": "UNDER",
+          "line": 56.5,
+          "wins": 52,
+          "losses": 30,
+          "projected": 52.0,
+          "margin": 4.5
+        },
+        {
+          "player": "Coby",
+          "team": "Mavericks",
+          "side": "OVER",
+          "line": 41.5,
+          "wins": 26,
+          "losses": 56,
+          "projected": 26.0,
+          "margin": -15.5
+        },
+        {
+          "player": "Coby",
+          "team": "Suns",
+          "side": "OVER",
+          "line": 31.5,
+          "wins": 45,
+          "losses": 37,
+          "projected": 45.0,
+          "margin": 13.5
+        },
+        {
+          "player": "Coby",
+          "team": "Knicks",
+          "side": "OVER",
+          "line": 53.5,
+          "wins": 53,
+          "losses": 29,
+          "projected": 53.0,
+          "margin": -0.5
+        },
+        {
+          "player": "Coby",
+          "team": "Phily",
+          "side": "UNDER",
+          "line": 42.5,
+          "wins": 45,
+          "losses": 37,
+          "projected": 45.0,
+          "margin": -2.5
+        },
+        {
+          "player": "Coby",
+          "team": "Raptors",
+          "side": "UNDER",
+          "line": 39.5,
+          "wins": 46,
+          "losses": 36,
+          "projected": 46.0,
+          "margin": -6.5
+        },
+        {
+          "player": "Andrew",
+          "team": "OKC",
+          "side": "UNDER",
+          "line": 62.5,
+          "wins": 64,
+          "losses": 18,
+          "projected": 64.0,
+          "margin": -1.5
+        },
+        {
+          "player": "Andrew",
+          "team": "Clippers",
+          "side": "UNDER",
+          "line": 48.5,
+          "wins": 42,
+          "losses": 40,
+          "projected": 42.0,
+          "margin": 6.5
+        },
+        {
+          "player": "Andrew",
+          "team": "Jazz",
+          "side": "OVER",
+          "line": 18.5,
+          "wins": 22,
+          "losses": 60,
+          "projected": 22.0,
+          "margin": 3.5
+        },
+        {
+          "player": "Andrew",
+          "team": "Magic",
+          "side": "UNDER",
+          "line": 51.5,
+          "wins": 45,
+          "losses": 37,
+          "projected": 45.0,
+          "margin": 6.5
+        },
+        {
+          "player": "Andrew",
+          "team": "Pacers",
+          "side": "UNDER",
+          "line": 38.5,
+          "wins": 19,
+          "losses": 63,
+          "projected": 19.0,
+          "margin": 19.5
+        },
+        {
+          "player": "Mark",
+          "team": "Grizzlies",
+          "side": "OVER",
+          "line": 40.5,
+          "wins": 25,
+          "losses": 57,
+          "projected": 25.0,
+          "margin": -15.5
+        },
+        {
+          "player": "Mark",
+          "team": "Pelicans",
+          "side": "OVER",
+          "line": 30.5,
+          "wins": 26,
+          "losses": 56,
+          "projected": 26.0,
+          "margin": -4.5
+        },
+        {
+          "player": "Mark",
+          "team": "Celtics",
+          "side": "OVER",
+          "line": 40.5,
+          "wins": 56,
+          "losses": 26,
+          "projected": 56.0,
+          "margin": 15.5
+        },
+        {
+          "player": "Mark",
+          "team": "Hornets",
+          "side": "UNDER",
+          "line": 27.5,
+          "wins": 44,
+          "losses": 38,
+          "projected": 44.0,
+          "margin": -16.5
+        },
+        {
+          "player": "Mark",
+          "team": "pistons",
+          "side": "OVER",
+          "line": 45.5,
+          "wins": 60,
+          "losses": 22,
+          "projected": 60.0,
+          "margin": 14.5
+        },
+        {
+          "player": "Blake",
+          "team": "Rockets",
+          "side": "OVER",
+          "line": 52.5,
+          "wins": 52,
+          "losses": 30,
+          "projected": 52.0,
+          "margin": -0.5
+        },
+        {
+          "player": "Blake",
+          "team": "Portland",
+          "side": "UNDER",
+          "line": 35.5,
+          "wins": 42,
+          "losses": 40,
+          "projected": 42.0,
+          "margin": -6.5
+        },
+        {
+          "player": "Blake",
+          "team": "Hawk (tua)",
+          "side": "OVER",
+          "line": 46.5,
+          "wins": 46,
+          "losses": 36,
+          "projected": 46.0,
+          "margin": -0.5
+        },
+        {
+          "player": "Blake",
+          "team": "Heat",
+          "side": "OVER",
+          "line": 37.5,
+          "wins": 43,
+          "losses": 39,
+          "projected": 43.0,
+          "margin": 5.5
+        },
+        {
+          "player": "Blake",
+          "team": "Wizards",
+          "side": "OVER",
+          "line": 21.5,
+          "wins": 17,
+          "losses": 65,
+          "projected": 17.0,
+          "margin": -4.5
+        },
+        {
+          "player": "Coz",
+          "team": "Denver",
+          "side": "UNDER",
+          "line": 53.5,
+          "wins": 54,
+          "losses": 28,
+          "projected": 54.0,
+          "margin": -0.5
+        },
+        {
+          "player": "Coz",
+          "team": "Spurs",
+          "side": "OVER",
+          "line": 44.5,
+          "wins": 62,
+          "losses": 20,
+          "projected": 62.0,
+          "margin": 17.5
+        },
+        {
+          "player": "Coz",
+          "team": "Bck",
+          "side": "OVER",
+          "line": 42.5,
+          "wins": 32,
+          "losses": 52,
+          "projected": 31.24,
+          "margin": -11.26
+        },
+        {
+          "player": "Coz",
+          "team": "Bu11",
+          "side": "OVER",
+          "line": 32.5,
+          "wins": 31,
+          "losses": 51,
+          "projected": 31.0,
+          "margin": -1.5
+        },
+        {
+          "player": "Coz",
+          "team": "Nets",
+          "side": "OVER",
+          "line": 20.5,
+          "wins": 20,
+          "losses": 62,
+          "projected": 20.0,
+          "margin": -0.5
+        }
+      ]
+    },
+    {
+      "season": "2026–27",
+      "champion": null,
+      "score": null,
+      "hits": null,
+      "bets": 30,
+      "status": "In progress"
+    }
+  ]
+}

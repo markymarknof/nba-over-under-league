@@ -1,0 +1,463 @@
+{
+  "season": "2026–27",
+  "seasonYear": 2027,
+  "gamesPerTeam": 82,
+  "scoring": "82-game projected margin",
+  "players": [
+    {
+      "name": "Blake",
+      "color": "#47a9ff",
+      "dark": "#16486f",
+      "emblem": "🐀"
+    },
+    {
+      "name": "Coz",
+      "color": "#ff6a85",
+      "dark": "#7f2841",
+      "emblem": "🐺"
+    },
+    {
+      "name": "Mark",
+      "color": "#b78bff",
+      "dark": "#543180",
+      "emblem": "🐻"
+    },
+    {
+      "name": "Coby",
+      "color": "#f4bc60",
+      "dark": "#70502a",
+      "emblem": "🦊"
+    },
+    {
+      "name": "Andy",
+      "color": "#52d6a2",
+      "dark": "#14694f",
+      "emblem": "🦅"
+    }
+  ],
+  "teams": [
+    {
+      "id": "NYK",
+      "name": "New York Knicks",
+      "conf": "East",
+      "primary": "#f58426",
+      "secondary": "#1261a6",
+      "priorWins": 53
+    },
+    {
+      "id": "BOS",
+      "name": "Boston Celtics",
+      "conf": "East",
+      "primary": "#16a875",
+      "secondary": "#063e33",
+      "priorWins": 56
+    },
+    {
+      "id": "PHI",
+      "name": "Philadelphia 76ers",
+      "conf": "East",
+      "primary": "#3677d6",
+      "secondary": "#df3e5d",
+      "priorWins": 45
+    },
+    {
+      "id": "DET",
+      "name": "Detroit Pistons",
+      "conf": "East",
+      "primary": "#e24753",
+      "secondary": "#17438e",
+      "priorWins": 60
+    },
+    {
+      "id": "CLE",
+      "name": "Cleveland Cavaliers",
+      "conf": "East",
+      "primary": "#b84967",
+      "secondary": "#e6b35d",
+      "priorWins": 52
+    },
+    {
+      "id": "MIA",
+      "name": "Miami Heat",
+      "conf": "East",
+      "primary": "#ec5365",
+      "secondary": "#f0aa4a",
+      "priorWins": 43
+    },
+    {
+      "id": "TOR",
+      "name": "Toronto Raptors",
+      "conf": "East",
+      "primary": "#d24660",
+      "secondary": "#191919",
+      "priorWins": 46
+    },
+    {
+      "id": "ATL",
+      "name": "Atlanta Hawks",
+      "conf": "East",
+      "primary": "#e84a61",
+      "secondary": "#dfc06c",
+      "priorWins": 46
+    },
+    {
+      "id": "IND",
+      "name": "Indiana Pacers",
+      "conf": "East",
+      "primary": "#f1c94d",
+      "secondary": "#184a8b",
+      "priorWins": 19
+    },
+    {
+      "id": "ORL",
+      "name": "Orlando Magic",
+      "conf": "East",
+      "primary": "#2778d3",
+      "secondary": "#171f48",
+      "priorWins": 45
+    },
+    {
+      "id": "CHA",
+      "name": "Charlotte Hornets",
+      "conf": "East",
+      "primary": "#37c4c5",
+      "secondary": "#62328e",
+      "priorWins": 44
+    },
+    {
+      "id": "WAS",
+      "name": "Washington Wizards",
+      "conf": "East",
+      "primary": "#3683a7",
+      "secondary": "#cb4b5c",
+      "priorWins": 17
+    },
+    {
+      "id": "CHI",
+      "name": "Chicago Bulls",
+      "conf": "East",
+      "primary": "#d72d54",
+      "secondary": "#16181e",
+      "priorWins": 31
+    },
+    {
+      "id": "MIL",
+      "name": "Milwaukee Bucks",
+      "conf": "East",
+      "primary": "#46987e",
+      "secondary": "#dfd0a3",
+      "priorWins": 32
+    },
+    {
+      "id": "BKN",
+      "name": "Brooklyn Nets",
+      "conf": "East",
+      "primary": "#cbd0dc",
+      "secondary": "#3a4150",
+      "priorWins": 20
+    },
+    {
+      "id": "OKC",
+      "name": "Oklahoma City Thunder",
+      "conf": "West",
+      "primary": "#2a89ce",
+      "secondary": "#f1ae55",
+      "priorWins": 64
+    },
+    {
+      "id": "SAS",
+      "name": "San Antonio Spurs",
+      "conf": "West",
+      "primary": "#c4c8d4",
+      "secondary": "#565c69",
+      "priorWins": 62
+    },
+    {
+      "id": "DEN",
+      "name": "Denver Nuggets",
+      "conf": "West",
+      "primary": "#efb64c",
+      "secondary": "#225eae",
+      "priorWins": 54
+    },
+    {
+      "id": "HOU",
+      "name": "Houston Rockets",
+      "conf": "West",
+      "primary": "#ec4253",
+      "secondary": "#842d4f",
+      "priorWins": 52
+    },
+    {
+      "id": "MIN",
+      "name": "Minnesota Timberwolves",
+      "conf": "West",
+      "primary": "#477ea7",
+      "secondary": "#80d4bb",
+      "priorWins": 49
+    },
+    {
+      "id": "LAL",
+      "name": "Los Angeles Lakers",
+      "conf": "West",
+      "primary": "#eac266",
+      "secondary": "#835cc2",
+      "priorWins": 53
+    },
+    {
+      "id": "POR",
+      "name": "Portland Trail Blazers",
+      "conf": "West",
+      "primary": "#ea5966",
+      "secondary": "#273044",
+      "priorWins": 42
+    },
+    {
+      "id": "PHX",
+      "name": "Phoenix Suns",
+      "conf": "West",
+      "primary": "#bd68e2",
+      "secondary": "#e89c47",
+      "priorWins": 45
+    },
+    {
+      "id": "GSW",
+      "name": "Golden State Warriors",
+      "conf": "West",
+      "primary": "#f3bf57",
+      "secondary": "#276bd6",
+      "priorWins": 37
+    },
+    {
+      "id": "UTA",
+      "name": "Utah Jazz",
+      "conf": "West",
+      "primary": "#a478dc",
+      "secondary": "#3f366e",
+      "priorWins": 22
+    },
+    {
+      "id": "DAL",
+      "name": "Dallas Mavericks",
+      "conf": "West",
+      "primary": "#3d8ad1",
+      "secondary": "#131f35",
+      "priorWins": 26
+    },
+    {
+      "id": "MEM",
+      "name": "Memphis Grizzlies",
+      "conf": "West",
+      "primary": "#6699cb",
+      "secondary": "#273e66",
+      "priorWins": 25
+    },
+    {
+      "id": "LAC",
+      "name": "LA Clippers",
+      "conf": "West",
+      "primary": "#4c8bcc",
+      "secondary": "#e2515a",
+      "priorWins": 42
+    },
+    {
+      "id": "NOP",
+      "name": "New Orleans Pelicans",
+      "conf": "West",
+      "primary": "#c99e5a",
+      "secondary": "#1c3359",
+      "priorWins": 26
+    },
+    {
+      "id": "SAC",
+      "name": "Sacramento Kings",
+      "conf": "West",
+      "primary": "#aa70de",
+      "secondary": "#442675",
+      "priorWins": 22
+    }
+  ],
+  "picks": [
+    {
+      "player": "Blake",
+      "team": "CLE",
+      "side": "OVER",
+      "line": 47.5
+    },
+    {
+      "player": "Blake",
+      "team": "IND",
+      "side": "UNDER",
+      "line": 43.5
+    },
+    {
+      "player": "Blake",
+      "team": "HOU",
+      "side": "OVER",
+      "line": 48.5
+    },
+    {
+      "player": "Blake",
+      "team": "UTA",
+      "side": "UNDER",
+      "line": 37.5
+    },
+    {
+      "player": "Blake",
+      "team": "DAL",
+      "side": "UNDER",
+      "line": 34.5
+    },
+    {
+      "player": "Blake",
+      "team": "PHX",
+      "side": "OVER",
+      "line": 40.5
+    },
+    {
+      "player": "Coz",
+      "team": "MIA",
+      "side": "OVER",
+      "line": 46.5
+    },
+    {
+      "player": "Coz",
+      "team": "SAS",
+      "side": "OVER",
+      "line": 59.5
+    },
+    {
+      "player": "Coz",
+      "team": "TOR",
+      "side": "OVER",
+      "line": 46.5
+    },
+    {
+      "player": "Coz",
+      "team": "BOS",
+      "side": "OVER",
+      "line": 51.5
+    },
+    {
+      "player": "Coz",
+      "team": "MIL",
+      "side": "OVER",
+      "line": 25.5
+    },
+    {
+      "player": "Coz",
+      "team": "NYK",
+      "side": "UNDER",
+      "line": 52.5
+    },
+    {
+      "player": "Mark",
+      "team": "MEM",
+      "side": "OVER",
+      "line": 29.5
+    },
+    {
+      "player": "Mark",
+      "team": "CHI",
+      "side": "OVER",
+      "line": 29.5
+    },
+    {
+      "player": "Mark",
+      "team": "POR",
+      "side": "UNDER",
+      "line": 42.5
+    },
+    {
+      "player": "Mark",
+      "team": "LAC",
+      "side": "OVER",
+      "line": 28.5
+    },
+    {
+      "player": "Mark",
+      "team": "ORL",
+      "side": "UNDER",
+      "line": 43.5
+    },
+    {
+      "player": "Mark",
+      "team": "PHI",
+      "side": "OVER",
+      "line": 50.5
+    },
+    {
+      "player": "Coby",
+      "team": "SAC",
+      "side": "OVER",
+      "line": 21.5
+    },
+    {
+      "player": "Coby",
+      "team": "WAS",
+      "side": "OVER",
+      "line": 34.5
+    },
+    {
+      "player": "Coby",
+      "team": "DET",
+      "side": "UNDER",
+      "line": 49.5
+    },
+    {
+      "player": "Coby",
+      "team": "DEN",
+      "side": "UNDER",
+      "line": 49.5
+    },
+    {
+      "player": "Coby",
+      "team": "GSW",
+      "side": "UNDER",
+      "line": 40.5
+    },
+    {
+      "player": "Coby",
+      "team": "BKN",
+      "side": "OVER",
+      "line": 24.5
+    },
+    {
+      "player": "Andy",
+      "team": "MIN",
+      "side": "OVER",
+      "line": 48.5
+    },
+    {
+      "player": "Andy",
+      "team": "OKC",
+      "side": "UNDER",
+      "line": 62.5
+    },
+    {
+      "player": "Andy",
+      "team": "LAL",
+      "side": "UNDER",
+      "line": 46.5
+    },
+    {
+      "player": "Andy",
+      "team": "ATL",
+      "side": "UNDER",
+      "line": 43.5
+    },
+    {
+      "player": "Andy",
+      "team": "CHA",
+      "side": "UNDER",
+      "line": 39.5
+    },
+    {
+      "player": "Andy",
+      "team": "NOP",
+      "side": "OVER",
+      "line": 27.5
+    }
+  ],
+  "sourceArchive": "2025–26 original workbook"
+}

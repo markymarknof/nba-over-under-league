@@ -1,0 +1,127 @@
+{
+  "season": 2027,
+  "updatedAt": null,
+  "source": "Awaiting first NBA standings sync",
+  "teams": {
+    "NYK": {
+      "wins": 0,
+      "losses": 0
+    },
+    "BOS": {
+      "wins": 0,
+      "losses": 0
+    },
+    "PHI": {
+      "wins": 0,
+      "losses": 0
+    },
+    "DET": {
+      "wins": 0,
+      "losses": 0
+    },
+    "CLE": {
+      "wins": 0,
+      "losses": 0
+    },
+    "MIA": {
+      "wins": 0,
+      "losses": 0
+    },
+    "TOR": {
+      "wins": 0,
+      "losses": 0
+    },
+    "ATL": {
+      "wins": 0,
+      "losses": 0
+    },
+    "IND": {
+      "wins": 0,
+      "losses": 0
+    },
+    "ORL": {
+      "wins": 0,
+      "losses": 0
+    },
+    "CHA": {
+      "wins": 0,
+      "losses": 0
+    },
+    "WAS": {
+      "wins": 0,
+      "losses": 0
+    },
+    "CHI": {
+      "wins": 0,
+      "losses": 0
+    },
+    "MIL": {
+      "wins": 0,
+      "losses": 0
+    },
+    "BKN": {
+      "wins": 0,
+      "losses": 0
+    },
+    "OKC": {
+      "wins": 0,
+      "losses": 0
+    },
+    "SAS": {
+      "wins": 0,
+      "losses": 0
+    },
+    "DEN": {
+      "wins": 0,
+      "losses": 0
+    },
+    "HOU": {
+      "wins": 0,
+      "losses": 0
+    },
+    "MIN": {
+      "wins": 0,
+      "losses": 0
+    },
+    "LAL": {
+      "wins": 0,
+      "losses": 0
+    },
+    "POR": {
+      "wins": 0,
+      "losses": 0
+    },
+    "PHX": {
+      "wins": 0,
+      "losses": 0
+    },
+    "GSW": {
+      "wins": 0,
+      "losses": 0
+    },
+    "UTA": {
+      "wins": 0,
+      "losses": 0
+    },
+    "DAL": {
+      "wins": 0,
+      "losses": 0
+    },
+    "MEM": {
+      "wins": 0,
+      "losses": 0
+    },
+    "LAC": {
+      "wins": 0,
+      "losses": 0
+    },
+    "NOP": {
+      "wins": 0,
+      "losses": 0
+    },
+    "SAC": {
+      "wins": 0,
+      "losses": 0
+    }
+  }
+}
