@@ -145,15 +145,16 @@
     const livePicks=results.filter(r=>r.margin!==null);
     const lead=leagueHasScores&&sorted[0].score!==null?sorted[0]:null;
     const topPicks=livePicks.length? [...livePicks].sort((a,b)=>b.margin-a.margin).slice(0,4):results.filter((_,i)=>i%7===0).slice(0,4);
-    return `<section class="arena-hero">
-      <div class="arena-lights" aria-hidden="true"></div>
-      <div class="arena-copy"><p class="eyebrow">NBA 2026–27 · SEASON TWO</p><h1>THE <em>O/U</em> LEAGUE</h1><p>Six picks each. Thirty teams. One champion. <strong>Every win counts.</strong></p><span class="arena-chip">${leagueHasScores?'THE RACE IS ON':'DRAFT LOCKED · AWAITING TIP-OFF'}</span></div>
-      <div class="arena-trophy" aria-hidden="true"><span class="trophy-light">★</span><svg viewBox="0 0 200 240" fill="none"><path d="M48 28h104v55c0 52-27 74-52 77-25-3-52-25-52-77V28Z" fill="#d19b3c" stroke="#ffe49a" stroke-width="5"/><path d="M48 49H22v34c0 31 22 45 54 46M152 49h26v34c0 31-22 45-54 46" stroke="#f8cc74" stroke-width="9" stroke-linecap="round"/><path d="M70 178h60M100 157v38M66 202h68l13 20H53l13-20Z" stroke="#ffe09b" stroke-width="9"/><path d="M75 64l25-14 25 14-5 30-20 15-20-15-5-30Z" stroke="#fff2bd" stroke-width="4"/></svg></div>
+    return `<section class="dashboard-intro" aria-label="NBA season contenders">
+      <div class="dashboard-intro-title">
+        <p class="eyebrow">NBA 2026–27 <span class="intro-dot">•</span> SEASON TWO</p>
+        <h1><span class="heading-marker"></span>THE CONTENDERS</h1>
+        <p>${lead?'CURRENT PACE LEADER: <strong>'+html(lead.name.toUpperCase())+'</strong>':'SIX PICKS EACH · THE RACE IS ON'}</p>
+      </div>
+      <span class="swipe-hint">SWIPE TO EXPLORE <span aria-hidden="true">→</span></span>
     </section>
-    <div class="arena-stats"><div><span class="stat-icon">◈</span><strong>30</strong><small>TEAMS DRAFTED</small></div><div><span class="stat-icon">◎</span><strong>82</strong><small>GAMES PER TEAM</small></div><div><span class="stat-icon">♟</span><strong>5</strong><small>PLAYERS</small></div><div><span class="stat-icon">★</span><strong>${history.seasons.filter(s=>s.champion).length}</strong><small>CHAMPION CROWNED</small></div></div>
-    ${leaguePulse()}
-    <div class="section-heading neon-section-heading"><h2><span class="heading-marker"></span>THE CONTENDERS</h2><p>${lead?'CURRENT LEADER: '+html(lead.name.toUpperCase()):'FIVE CONTENDERS · ZERO FAKE STANDINGS'}</p></div>
     <div class="mascot-grid">${sorted.map((p,i)=>mascotCard(p,i)).join('')}</div>
+    ${leaguePulse()}
     <div class="arena-main-grid">
       <section class="arena-section"><div class="arena-panel-title"><h2>LEAGUE STANDINGS</h2><a href="#rankings">POWER RANKINGS ↗</a></div>${board()}</section>
       <section class="arena-section"><div class="arena-panel-title"><h2>BET HEAT CHECK</h2><a href="#draft">ALL 30 PICKS ↗</a></div><div class="performance-panel panel">${topPicks.map(p=>performanceRow(p,true)).join('')}<p class="data-explainer">${leagueHasScores?'Bar = projected wins · White line = preseason O/U.':'The bars fill automatically after the NBA season begins.'}</p></div></section>
