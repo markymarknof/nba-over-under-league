@@ -71,6 +71,7 @@ jobs:
         run: |
           node --check assets/app.js
           node --check data/boxscores.js
+          node tests/browser_smoke_test.js
       - name: Archive the champion automatically once all 30 teams finish 82 games
         run: python scripts/finalize_if_complete.py
       - name: Save validated standings and league history
