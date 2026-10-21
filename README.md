@@ -81,17 +81,23 @@ Artwork under `assets/mascots/` is original AI-generated art created for this
 friends' competition; mascot cards aren't official NBA brands.
 
 
-## Homepage League Pulse (October 2026)
-The dashboard now leads with a provisional pace leader, biggest score gain since the previous
-**daily** snapshot, and up to three recent attributed NBA headlines. The standings updater
-runs at approximately 00:17, 06:17, 12:17 and 18:17 UTC (GitHub may delay jobs).
+## Homepage League Pulse and NBA Stat Freaks (October 2026)
 
-- The leaderboard remains a raw 82-game pace estimate, and the leader is **provisional**
-  until all five players have had a pick play a game. It is not a prediction of the champion.
-- Biggest jump compares **actual points** against the previous saved daily snapshot.
-  It does not manufacture comparison scores when fewer than two days are available.
-- The news digest is fetched from ESPN's unofficial NBA news API in GitHub Actions.
-  Articles link back to ESPN; the browser never calls the API itself. If the
-  news endpoint fails or is stale, the last-known-good headlines or a fallback appear.
-- NBA news is informational and independent of the contest scores. No paid APIs,
-  extra accounts, Vercel, Blob storage, backend or visitor analytics were added.
+The homepage shows the current **provisional** O/U leader, biggest gain in league
+points since the previous saved daily score snapshot, and NBA Stat Freaks.
+The third panel replaces headlines with verified individual player box scores:
+top performers by overall impact plus the night's points, rebounds and assists
+leaders. A triple-double is labelled when supported by the stats.
+
+We collect **completed regular-season games** for the latest NBA game date in
+US Eastern time, looking back up to four previous days. The date and number of
+successfully parsed games are shown; no future games, preseason stats, invented
+stat lines or falsely labelled 'today' results are used. Each performance can
+link to its actual ESPN box score. If the unofficial ESPN source is unavailable,
+the last valid dated result is retained; after five days the panel displays an
+honest fallback rather than presenting old scores as today's.
+
+Everything runs in the existing **six-hourly GitHub Actions workflow**,
+together with the official contest scores and the league snapshot history.
+The site itself is static; visiting the homepage triggers no API calls,
+no databases, no Blob storage and no additional subscriptions.
