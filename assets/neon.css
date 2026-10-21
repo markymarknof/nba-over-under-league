@@ -210,3 +210,37 @@ body{background:radial-gradient(ellipse at 47% -13%,#12326d 0,transparent 42%),r
 .pulse-no-news{padding:6px 0 12px}
 @media(max-width:900px){.league-pulse{grid-template-columns:repeat(2,minmax(0,1fr))}.pulse-news{grid-column:1/-1}.pulse-stories{grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.pulse-story{border-top:0;border-left:1px solid #31425a;padding:0 0 0 14px}.pulse-story:first-child{border-left:0;padding-left:0}}
 @media(max-width:560px){.league-pulse{gap:8px;margin:13px 0 17px}.pulse-card{padding:13px 11px 12px;border-radius:10px}.pulse-label{font-size:9px;gap:4px;letter-spacing:.045em;margin-bottom:6px}.pulse-label>span{font-size:13px}.pulse-person{gap:6px;min-height:43px}.pulse-person .animal{width:38px;height:38px;flex-basis:38px}.pulse-person strong{font-size:21px}.pulse-metric{font-size:20px;margin-top:6px}.pulse-metric small{font-size:8px}.pulse-card p{font-size:9px;margin-top:7px}.pulse-empty{font-size:12px;margin:18px 0 13px}.pulse-stories{grid-template-columns:1fr;gap:0}.pulse-story,.pulse-story:first-child{border-left:0;border-top:1px solid #31425a;padding:10px 0}.pulse-story:first-child{border-top:0;padding-top:3px}.pulse-story strong{font-size:11px}.pulse-source{font-size:8px}}
+
+
+/* v4: NBA Stat Freaks — real scoring nights, points / boards / assists leaders */
+.pulse-monsters{background:linear-gradient(150deg,#14213b 0%,#0a142b 58%,#10152e 100%);}
+.pulse-monsters:before{background:linear-gradient(90deg,#ffab48,#fc6979,#b26aff,transparent)}
+.monster-night-date{margin-left:auto;font-size:9px;color:#b9c9df;font-weight:800;letter-spacing:.06em;white-space:nowrap}
+.stat-crowns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:3px 0 16px}
+.stat-crown{display:flex;flex-direction:column;gap:4px;min-width:0;padding:11px 8px 10px;border:1px solid #354768;border-radius:9px;background:linear-gradient(165deg,#1e2d4b,#0e1b31);min-height:93px}
+.stat-crown:first-child{border-color:#8b5b33;background:linear-gradient(155deg,#382b25,#172039)}
+.stat-crown small{color:#9badc9;letter-spacing:.12em;font-weight:850;font-size:9px}
+.stat-crown strong{display:block;font-size:28px;letter-spacing:-.04em;line-height:1;color:#ffe0aa;font-weight:950}
+.stat-crown strong i{font-style:normal;color:#acbdd6;font-size:10px;letter-spacing:0}
+.stat-crown span{display:block;color:#f3f8ff;font-size:11px;line-height:1.15;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;font-weight:700}
+.monster-highlights{border-top:1px solid #2b4462;padding-top:11px}
+.monster-subtitle{font-size:9px;letter-spacing:.13em;color:#9caec9;font-weight:850;margin-bottom:5px}
+.monster-row{display:flex;justify-content:space-between;align-items:center;gap:9px;padding:10px 0;border-bottom:1px solid #2a3c55;color:#fff}
+.monster-row:last-child{border-bottom:0}
+.monster-row:hover .monster-identity strong{color:#86c6ff}
+.monster-identity{display:flex;align-items:center;gap:9px;min-width:0;flex:1}
+.monster-identity .team-mark{min-width:29px;width:29px;height:29px;font-size:9px}
+.monster-identity>span:last-child{display:flex;flex-direction:column;min-width:0}
+.monster-identity strong{font-size:12px;line-height:1.2;font-weight:850;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.monster-identity small{font-size:9px;color:#94aaca}
+.monster-numbers{text-align:right;flex:none}
+.monster-line-numbers{font-size:9px;color:#adbed7;font-weight:750;white-space:nowrap}
+.monster-line-numbers b{font-size:16px;color:#f4f7ff}
+.monster-special{display:block;margin-top:3px;color:#ffcd6f;font-size:9px;font-weight:900}
+.monster-team-fallback{font-size:10px;color:#abc0dc;font-weight:850}
+.monster-empty{display:flex;flex-direction:column;gap:11px;padding:25px 10px;color:#aebed9;text-align:center}
+.monster-empty strong{font-size:13px;color:#fff;font-weight:900}
+.monster-empty span{font-size:11px}
+@media(max-width:1100px) and (min-width:901px){.stat-crowns{gap:5px}.stat-crown{padding:10px 6px}.stat-crown strong{font-size:22px}.stat-crown span{font-size:9px}.monster-identity strong{font-size:10px}.monster-identity{gap:5px}.monster-line-numbers b{font-size:13px}}
+@media(max-width:560px){.monster-night-date{font-size:8px}.stat-crowns{gap:7px;margin-bottom:12px}.stat-crown{padding:10px 7px;min-height:82px}.stat-crown strong{font-size:23px}.stat-crown strong i{font-size:9px}.stat-crown span{font-size:10px}.stat-crown small{font-size:8px}.monster-row{padding:10px 0}.monster-identity strong{font-size:12px}.monster-identity .team-mark{width:30px;height:30px;min-width:30px}.monster-line-numbers b{font-size:15px}.pulse-monsters .pulse-label{font-size:11px}.pulse-monsters .pulse-source{margin-top:11px}}
+@media(max-width:380px){.monster-identity .team-mark{width:24px;height:26px;min-width:24px}.monster-identity strong{font-size:10px}.monster-line-numbers b{font-size:13px}.monster-line-numbers{font-size:8px}.monster-identity{gap:5px}.stat-crown strong{font-size:21px}.stat-crown span{font-size:9px}}
