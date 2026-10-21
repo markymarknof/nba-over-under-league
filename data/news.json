@@ -1,5 +1,31 @@
 {
-  "updatedAt": null,
+  "updatedAt": "2026-10-21T05:52:57Z",
   "source": "ESPN NBA News",
-  "articles": []
+  "articles": [
+    {
+      "headline": "Mike Brown: Would not have felt good about a win vs. 76ers given Knicks' play",
+      "url": "https://www.espn.com/nba/story/_/id/50235062/mike-brown-not-felt-good-knicks-win-vs-76ers-given-play",
+      "published": "2026-10-21T05:41:54Z"
+    },
+    {
+      "headline": "Sixers' Joel Embiid has 3 blocks in win over Knicks, eyes All-Defensive season",
+      "url": "https://www.espn.com/nba/story/_/id/50234914/sixers-joel-embiid-3-blocks-season-opener-vs-knicks",
+      "published": "2026-10-21T05:31:50Z"
+    },
+    {
+      "headline": "NBA opening day: Celtics-Pistons, 76ers-Knicks, Thunder-Spurs results, highlights",
+      "url": "https://www.espn.com/nba/story/_/id/50220591/nba-opening-day-live-updates-highlights",
+      "published": "2026-10-21T04:53:29Z"
+    },
+    {
+      "headline": "Thunder start season with impressive win over the Spurs",
+      "url": "https://www.espn.com/video/clip/_/id/50234757/thunder-start-season-impressive-win-spurs",
+      "published": "2026-10-21T04:35:15Z"
+    },
+    {
+      "headline": "Knicks celebrate NBA title, add surprise Cup banner",
+      "url": "https://www.espn.com/nba/story/_/id/50232540/knicks-nba-cup-banner-championship-night",
+      "published": "2026-10-21T04:22:14Z"
+    }
+  ]
 }

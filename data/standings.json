@@ -1,6 +1,6 @@
 {
   "season": 2027,
-  "updatedAt": "2026-10-21T01:01:50Z",
+  "updatedAt": "2026-10-21T05:52:57Z",
   "source": "ESPN standings (unofficial; see README)",
   "teams": {
     "ATL": {
@@ -81,10 +81,10 @@
     },
     "NYK": {
       "wins": 0,
-      "losses": 0
+      "losses": 1
     },
     "OKC": {
-      "wins": 0,
+      "wins": 1,
       "losses": 0
     },
     "ORL": {
@@ -92,7 +92,7 @@
       "losses": 0
     },
     "PHI": {
-      "wins": 0,
+      "wins": 1,
       "losses": 0
     },
     "PHX": {
@@ -109,7 +109,7 @@
     },
     "SAS": {
       "wins": 0,
-      "losses": 0
+      "losses": 1
     },
     "TOR": {
       "wins": 0,
