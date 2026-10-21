@@ -51,6 +51,47 @@
   const note = message => `<div class="league-note">${message}</div>`;
   const progress = (n,d=82) => `<span class="progress-track"><span class="progress-fill" style="display:block;width:${Math.min(100,Math.max(0,100*n/d)).toFixed(1)}%"></span></span>`;
 
+
+  // League Pulse: only genuine results and saved daily snapshots; no fake news or movers.
+  const newsFeed = window.LEAGUE_NEWS || {articles:[]};
+  function leaguePulse(){
+    const active = playerResult.filter(p=>p.scored>0).sort((a,b)=>b.score-a.score);
+    const leader = active[0] || null;
+    const firstScore = active.length < playerResult.length;
+    const totalPlayedTeams = results.filter(p=>p.gp>0).length;
+    const saved = Array.isArray(snapshots.snapshots)?snapshots.snapshots:[];
+    const valid = saved.filter(s=>s && s.scores && typeof s.scores==='object');
+    const previous = valid.length>=2 ? valid[valid.length-2] : null;
+    const changes = previous ? playerResult.map(p=>{
+      const before = previous.scores[p.name];
+      return Number.isFinite(before) && Number.isFinite(p.score)
+        ? {name:p.name,color:p.color,delta:p.score-before}
+        : null;
+    }).filter(Boolean) : [];
+    const biggestGain = changes.filter(p=>p.delta>0.004).sort((a,b)=>b.delta-a.delta)[0] || null;
+    const stories = (Array.isArray(newsFeed.articles)?newsFeed.articles:[]).filter(story=>{
+      try {
+        const u=new URL(story.url);
+        const date=new Date(story.published);
+        return u.protocol==='https:' && ['espn.com','www.espn.com'].includes(u.hostname) && !Number.isNaN(date.getTime()) && Date.now()-date.getTime()<5*24*3600*1000;
+      } catch(e) { return false; }
+    }).slice(0,3);
+    const leaderHtml = leader
+      ? '<div class="pulse-person" style="--player:'+html(leader.color)+'">'+emblem(leader)+'<strong>'+html(leader.name)+'</strong></div><div class="pulse-metric">'+scoreText(leader.score)+' <small>projected pts</small></div><p>'+totalPlayedTeams+'/30 teams have played. '+(firstScore?'Only '+active.length+'/5 contenders have scoring data so far.':'Scores are still early-season projections.')+'</p>'
+      : '<strong class="pulse-empty">AWAITING TIP-OFF</strong><p>The leader appears as soon as regular-season records arrive.</p>';
+    const moverHtml = biggestGain
+      ? '<div class="pulse-person" style="--player:'+html(biggestGain.color)+'">'+emblem(biggestGain)+'<strong>'+html(biggestGain.name)+'</strong></div><div class="pulse-metric positive">▲ '+signed(biggestGain.delta)+' <small>pts gained</small></div><p>Compared with the previous daily snapshot. <a href="#race">View the race ↗</a></p>'
+      : '<strong class="pulse-empty">NOT ENOUGH HISTORY</strong><p>'+(valid.length<2?'After two separate daily snapshots, we can name the biggest riser.':'No positive movers since the previous snapshot.')+'</p>';
+    const storiesHtml = stories.length
+      ? stories.map(story=>'<a class="pulse-story" href="'+html(story.url)+'" target="_blank" rel="noopener noreferrer"><strong>'+html(story.headline)+'</strong><span>ESPN ↗</span></a>').join('')
+      : '<p class="pulse-no-news">The NBA headline feed is syncing. <a href="https://www.espn.com/nba/" target="_blank" rel="noopener noreferrer">Catch up at ESPN ↗</a></p>';
+    return '<section class="league-pulse" aria-label="League pulse and latest NBA headlines">'
+      + '<a class="pulse-card pulse-leader" href="#rankings"><div class="pulse-label"><span>♛</span> '+(firstScore?'EARLY PACE LEADER':'CURRENT LEADER')+'</div>'+leaderHtml+'</a>'
+      + '<div class="pulse-card pulse-mover"><div class="pulse-label"><span>↗</span> BIGGEST JUMP</div>'+moverHtml+'</div>'
+      + '<div class="pulse-card pulse-news"><div class="pulse-label"><span>✦</span> NBA HOT SHEET <a href="https://www.espn.com/nba/" target="_blank" rel="noopener noreferrer">MORE ↗</a></div><div class="pulse-stories">'+storiesHtml+'</div><small class="pulse-source">Headlines from ESPN · Links open original articles</small></div>'
+      + '</section>';
+  }
+
   const playerImage = (p,extra='') => `<img class="${extra}" src="assets/mascots/${p.name.toLowerCase()}.webp" alt="Illustrated ${html(p.name)} basketball mascot" loading="lazy">`;
   const mascotCard = (p,i,compact=false) => `<a class="mascot-card ${compact?'compact':''}" href="#profile/${encodeURIComponent(p.name)}" style="--player:${p.color};--player-dark:${p.dark}" aria-label="Open ${html(p.name)}'s player profile">
     <div class="mascot-art">${playerImage(p)}<span class="mascot-rank">${leagueHasScores&&p.score!==null?('#'+(i+1)):'SEASON 02'}</span></div>
@@ -88,6 +129,7 @@
       <div class="arena-trophy" aria-hidden="true"><span class="trophy-light">★</span><svg viewBox="0 0 200 240" fill="none"><path d="M48 28h104v55c0 52-27 74-52 77-25-3-52-25-52-77V28Z" fill="#d19b3c" stroke="#ffe49a" stroke-width="5"/><path d="M48 49H22v34c0 31 22 45 54 46M152 49h26v34c0 31-22 45-54 46" stroke="#f8cc74" stroke-width="9" stroke-linecap="round"/><path d="M70 178h60M100 157v38M66 202h68l13 20H53l13-20Z" stroke="#ffe09b" stroke-width="9"/><path d="M75 64l25-14 25 14-5 30-20 15-20-15-5-30Z" stroke="#fff2bd" stroke-width="4"/></svg></div>
     </section>
     <div class="arena-stats"><div><span class="stat-icon">◈</span><strong>30</strong><small>TEAMS DRAFTED</small></div><div><span class="stat-icon">◎</span><strong>82</strong><small>GAMES PER TEAM</small></div><div><span class="stat-icon">♟</span><strong>5</strong><small>PLAYERS</small></div><div><span class="stat-icon">★</span><strong>${history.seasons.filter(s=>s.champion).length}</strong><small>CHAMPION CROWNED</small></div></div>
+    ${leaguePulse()}
     <div class="section-heading neon-section-heading"><h2><span class="heading-marker"></span>THE CONTENDERS</h2><p>${lead?'CURRENT LEADER: '+html(lead.name.toUpperCase()):'FIVE CONTENDERS · ZERO FAKE STANDINGS'}</p></div>
     <div class="mascot-grid">${sorted.map((p,i)=>mascotCard(p,i)).join('')}</div>
     <div class="arena-main-grid">
