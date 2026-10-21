@@ -16,7 +16,14 @@ function smoke(route, data=standings) {
  return main.innerHTML;
 }
 const dashboard=smoke('dashboard');
-if(!dashboard.includes('Andrew')||!dashboard.includes('DRAFT LOCKED')||!dashboard.includes('mascot-grid')) throw Error('Dashboard missing current/historical state or mascots');
+if(!dashboard.includes('Andrew')||!dashboard.includes('mascot-grid')||!dashboard.includes('dashboard-intro')) throw Error('Homepage missing contenders or defending champion');
+if(dashboard.includes('class="arena-hero"')||dashboard.includes('class="arena-stats"')) throw Error('Old empty hero / static stat boxes still on homepage');
+if(!(dashboard.indexOf('class="dashboard-intro"')<dashboard.indexOf('class="mascot-grid"') &&
+     dashboard.indexOf('class="mascot-grid"')<dashboard.indexOf('class="league-pulse"') &&
+     dashboard.indexOf('class="league-pulse"')<dashboard.indexOf('class="arena-main-grid"')))
+  throw Error('Homepage is not mascots-first with live pulse immediately underneath');
+if((dashboard.match(/class="mascot-card /g)||[]).length!==5) throw Error('Five mascot cards not rendered');
+if(!dashboard.includes('NBA STAT FREAKS')) throw Error('Stat Freaks panel missing');
 const draft=smoke('draft');
 if((draft.match(/class="draft-card"/g)||[]).length !== 5) throw Error('Draft cards != 5');
 if((draft.match(/class="bet-row"/g)||[]).length !== 30) throw Error('Bet rows != 30');
