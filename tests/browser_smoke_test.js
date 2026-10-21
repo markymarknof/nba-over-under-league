@@ -23,7 +23,7 @@ if(!(dashboard.indexOf('class="dashboard-intro"')<dashboard.indexOf('class="masc
      dashboard.indexOf('class="league-pulse"')<dashboard.indexOf('class="arena-main-grid"')))
   throw Error('Homepage is not mascots-first with live pulse immediately underneath');
 if((dashboard.match(/class="mascot-card /g)||[]).length!==5) throw Error('Five mascot cards not rendered');
-if(!dashboard.includes('NBA STAT FREAKS')) throw Error('Stat Freaks panel missing');
+if(!dashboard.includes('NIGHTLY MONSTERS')) throw Error('NBA box-score panel missing');
 const draft=smoke('draft');
 if((draft.match(/class="draft-card"/g)||[]).length !== 5) throw Error('Draft cards != 5');
 if((draft.match(/class="bet-row"/g)||[]).length !== 30) throw Error('Bet rows != 30');
