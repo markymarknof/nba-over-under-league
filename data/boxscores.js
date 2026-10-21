@@ -1,0 +1,1 @@
+window.LEAGUE_BOXSCORES = {"updatedAt":null,"gameDate":null,"gameCount":0,"source":"ESPN NBA box scores (unofficial)","leaders":{},"performers":[]};
