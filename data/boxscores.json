@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T06:19:48Z",
+  "updatedAt": "2026-10-21T06:22:02Z",
   "gameDate": "2026-10-20",
   "gameCount": 3,
   "source": "ESPN NBA box scores (unofficial)",
@@ -16,7 +16,7 @@
     },
     "rebounds": {
       "name": "Andre Drummond",
-      "team": "NY",
+      "team": "NYK",
       "gameId": "401909089",
       "points": 12,
       "rebounds": 14,
@@ -68,7 +68,7 @@
     },
     {
       "name": "Victor Wembanyama",
-      "team": "SA",
+      "team": "SAS",
       "gameId": "401909090",
       "points": 12,
       "rebounds": 13,
