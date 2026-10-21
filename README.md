@@ -79,3 +79,19 @@ snapshots separately before resetting the season.
 
 Artwork under `assets/mascots/` is original AI-generated art created for this
 friends' competition; mascot cards aren't official NBA brands.
+
+
+## Homepage League Pulse (October 2026)
+The dashboard now leads with a provisional pace leader, biggest score gain since the previous
+**daily** snapshot, and up to three recent attributed NBA headlines. The standings updater
+runs at approximately 00:17, 06:17, 12:17 and 18:17 UTC (GitHub may delay jobs).
+
+- The leaderboard remains a raw 82-game pace estimate, and the leader is **provisional**
+  until all five players have had a pick play a game. It is not a prediction of the champion.
+- Biggest jump compares **actual points** against the previous saved daily snapshot.
+  It does not manufacture comparison scores when fewer than two days are available.
+- The news digest is fetched from ESPN's unofficial NBA news API in GitHub Actions.
+  Articles link back to ESPN; the browser never calls the API itself. If the
+  news endpoint fails or is stale, the last-known-good headlines or a fallback appear.
+- NBA news is informational and independent of the contest scores. No paid APIs,
+  extra accounts, Vercel, Blob storage, backend or visitor analytics were added.
