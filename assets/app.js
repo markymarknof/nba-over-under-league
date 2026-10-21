@@ -52,8 +52,40 @@
   const progress = (n,d=82) => `<span class="progress-track"><span class="progress-fill" style="display:block;width:${Math.min(100,Math.max(0,100*n/d)).toFixed(1)}%"></span></span>`;
 
 
-  // League Pulse: verified competition points and real nightly player box scores.
-  const boxscores = window.LEAGUE_BOXSCORES || { leaders:{}, performers:[] };
+  // League Pulse: only verified NBA results and saved daily league snapshots.
+  const boxscores = window.LEAGUE_BOXSCORES || {performers:[],leaders:{}};
+  const boxDate = boxscores.gameDate && /^\d{4}-\d{2}-\d{2}$/.test(boxscores.gameDate) ? boxscores.gameDate : null;
+  const isRecentBoxDate = boxDate && Number.isFinite(Date.parse(boxDate+'T12:00:00Z'))
+    && Date.now()-Date.parse(boxDate+'T12:00:00Z') < 5*86400000;
+  const verifiedBoxLines = (isRecentBoxDate && Array.isArray(boxscores.performers) ? boxscores.performers : []).filter(line =>
+    line && typeof line.name==='string' && typeof line.team==='string' &&
+    Number.isFinite(line.points) && Number.isFinite(line.rebounds) && Number.isFinite(line.assists) &&
+    /^\d+$/.test(String(line.gameId || ''))
+  );
+  function nightlyMonsters(){
+    const boxUrl = line => 'https://www.espn.com/nba/boxscore/_/gameId/'+encodeURIComponent(line.gameId);
+    const displayDate = boxDate ? new Intl.DateTimeFormat('en-AU',{timeZone:'UTC',month:'short',day:'numeric'})
+      .format(new Date(boxDate+'T12:00:00Z')) : '';
+    if (!verifiedBoxLines.length) return '<div class="monster-empty"><strong>WAITING FOR THE NEXT NBA SLATE</strong>'
+      + '<p>Crazy stat lines and tonight’s PTS, REB and AST leaders appear once the latest box scores are final.</p></div>';
+    const lines=verifiedBoxLines.slice(0,3).map((p,i)=>{
+      const extras = [p.steals>=3?p.steals+' STL':null,p.blocks>=3?p.blocks+' BLK':null].filter(Boolean);
+      return '<a class="monster-line" href="'+boxUrl(p)+'" target="_blank" rel="noopener noreferrer" aria-label="View ESPN box score for '+html(p.name)+'">'
+        +'<span class="monster-rank">'+(i+1)+'</span><span class="monster-person"><strong>'+html(p.name)+'</strong><small>'+html(p.team)+' · '+p.points+' PTS · '+p.rebounds+' REB · '+p.assists+' AST'
+        +(extras.length?' · '+extras.join(' · '):'')+'</small></span><span class="monster-boxscore">↗</span></a>';
+    }).join('');
+    const leaders=boxscores.leaders||{};
+    const stats=[['POINTS','points','PTS'],['REBOUNDS','rebounds','REB'],['ASSISTS','assists','AST']];
+    const leadersHtml=stats.map(([label,key,abbr])=>{
+      const p=leaders[key];
+      if(!p||!Number.isFinite(p[key])||!p.name||!p.gameId||!/^\d+$/.test(String(p.gameId)))return '';
+      return '<a class="monster-leader" href="'+boxUrl(p)+'" target="_blank" rel="noopener noreferrer"><small>'+label+'</small>'
+        +'<strong>'+p[key]+' <span>'+abbr+'</span></strong><span>'+html(p.name)+'</span></a>';
+    }).join('');
+    return '<div class="monster-slatedate">'+displayDate+' ET · '+Number(boxscores.gameCount||0)+' completed '+(boxscores.gameCount===1?'game':'games')+'</div>'
+      +'<div class="monster-lines">'+lines+'</div><div class="monster-leaders">'+leadersHtml+'</div>'
+      +'<small class="pulse-source">Latest completed NBA game date · ESPN box scores · Stat leaders among those games</small>';
+  }
   function leaguePulse(){
     const active = playerResult.filter(p=>p.scored>0).sort((a,b)=>b.score-a.score);
     const leader = active[0] || null;
@@ -75,36 +107,10 @@
     const moverHtml = biggestGain
       ? '<div class="pulse-person" style="--player:'+html(biggestGain.color)+'">'+emblem(biggestGain)+'<strong>'+html(biggestGain.name)+'</strong></div><div class="pulse-metric positive">▲ '+signed(biggestGain.delta)+' <small>pts gained</small></div><p>Compared with the previous daily snapshot. <a href="#race">View the race ↗</a></p>'
       : '<strong class="pulse-empty">NOT ENOUGH HISTORY</strong><p>'+(valid.length<2?'After two separate daily snapshots, we can name the biggest riser.':'No positive movers since the previous snapshot.')+'</p>';
-    const day = typeof boxscores.gameDate==='string' && /^\d{4}-\d{2}-\d{2}$/.test(boxscores.gameDate)
-      ? boxscores.gameDate : null;
-    const gameDateMillis=day ? Date.parse(day+'T12:00:00Z') : NaN;
-    const isRecent=Number.isFinite(gameDateMillis) && Date.now()-gameDateMillis<5*86400000 && Date.now()-gameDateMillis > -86400000;
-    const leaders=isRecent && boxscores.leaders && typeof boxscores.leaders==='object' ? boxscores.leaders : {};
-    const monsters=isRecent && Array.isArray(boxscores.performers) ? boxscores.performers.slice(0,3) : [];
-    const scoreUrl=line => /^\d+$/.test(String(line?.gameId||'')) ? 'https://www.espn.com/nba/boxscore/_/gameId/'+line.gameId : '';
-    const displayDate=day ? new Intl.DateTimeFormat('en-AU',{day:'numeric',month:'short',timeZone:'UTC'}).format(new Date(day+'T12:00:00Z')).toUpperCase() : '';
-    const crown=(category,title,unit)=> {
-      const p=leaders[category];
-      if(!p || !Number.isFinite(p[category])) return '<div class="stat-crown"><small>'+title+'</small><strong>—</strong></div>';
-      return '<div class="stat-crown"><small>'+title+'</small><strong>'+p[category]+' <i>'+unit+'</i></strong><span>'+html(p.name)+'</span></div>';
-    };
-    const monsterRow = p => {
-      const teamInfo=teamById[p.team];
-      const triple=['points','rebounds','assists','steals','blocks'].filter(k=>Number(p[k])>=10).length>=3;
-      const boxscoreUrl=scoreUrl(p);
-      const tag=triple?'<span class="monster-special">TRIPLE-DOUBLE</span>':'';
-      const heading='<div class="monster-identity">'+(teamInfo?mark(teamInfo,true):'<span class="monster-team-fallback">'+html(p.team)+'</span>')+'<span><strong>'+html(p.name)+'</strong><small>'+html(p.team)+'</small></span></div>';
-      const line='<div class="monster-line-numbers"><b>'+Number(p.points||0)+'</b> PTS <b>'+Number(p.rebounds||0)+'</b> REB <b>'+Number(p.assists||0)+'</b> AST</div>';
-      const content=heading+'<div class="monster-numbers">'+line+tag+'</div>';
-      return boxscoreUrl ? '<a class="monster-row" href="'+html(boxscoreUrl)+'" target="_blank" rel="noopener noreferrer">'+content+'</a>' : '<div class="monster-row">'+content+'</div>';
-    };
-    const nightlyHtml=monsters.length
-      ? '<div class="stat-crowns">'+crown('points','POINTS','PTS')+crown('rebounds','BOARDS','REB')+crown('assists','DIMES','AST')+'</div><div class="monster-highlights"><div class="monster-subtitle">BEST BOX-SCORE LINES</div>'+monsters.map(monsterRow).join('')+'</div>'
-      : '<div class="monster-empty"><strong>AWAITING FINAL BOXSCORES</strong><span>Points, boards and assists leaders will appear after NBA games finish.</span></div>';
-    return '<section class="league-pulse" aria-label="League pulse and NBA player stat leaders">'
+    return '<section class="league-pulse" aria-label="League standings pulse and standout NBA box scores">'
       + '<a class="pulse-card pulse-leader" href="#rankings"><div class="pulse-label"><span>♛</span> '+(firstScore?'EARLY PACE LEADER':'CURRENT LEADER')+'</div>'+leaderHtml+'</a>'
       + '<div class="pulse-card pulse-mover"><div class="pulse-label"><span>↗</span> BIGGEST JUMP</div>'+moverHtml+'</div>'
-      + '<div class="pulse-card pulse-monsters"><div class="pulse-label"><span>★</span> NBA STAT FREAKS <span class="monster-night-date">'+(monsters.length?displayDate+' · US NIGHT':'LATEST FINALS')+'</span></div>'+nightlyHtml+'<small class="pulse-source">'+(monsters.length?boxscores.gameCount+' final game'+(boxscores.gameCount===1?'':'s')+' checked · ESPN box scores':'Automatically checks completed NBA games')+'</small></div>'
+      + '<div class="pulse-card pulse-news pulse-monsters"><div class="pulse-label"><span>✦</span> NIGHTLY MONSTERS <a href="https://www.espn.com/nba/scoreboard" target="_blank" rel="noopener noreferrer">GAMES ↗</a></div>'+nightlyMonsters()+'</div>'
       + '</section>';
   }
 
