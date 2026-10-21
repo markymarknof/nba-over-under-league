@@ -19,6 +19,7 @@ BASE = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba"
 MAX_GAMES = 16
 DATE_LOOKBACK = 4
 MAX_DISPLAY_AGE_DAYS = 5
+TEAM_ALIASES = {"NY": "NYK", "SA": "SAS", "GS": "GSW", "NO": "NOP", "PHO": "PHX"}
 
 
 def get_json(url):
@@ -78,7 +79,8 @@ def parse_summary(summary, game_id):
         if not isinstance(team_group, dict):
             continue
         team = team_group.get("team") or {}
-        team_code = str(team.get("abbreviation") or "").upper()
+        raw_code = str(team.get("abbreviation") or "").upper()
+        team_code = TEAM_ALIASES.get(raw_code, raw_code)
         for category in team_group.get("statistics") or []:
             keys = category.get("names") or category.get("labels") or []
             if not isinstance(keys, list):
