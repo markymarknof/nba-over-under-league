@@ -64,14 +64,21 @@ jobs:
             exit 1
           fi
           python scripts/manual_update.py --team "$TEAM" --wins "$WINS" --losses "$LOSSES"
+      - name: Refresh NBA headlines (nonblocking)
+        continue-on-error: true
+        run: python scripts/update_news.py
+      - name: Check browser JavaScript syntax
+        run: |
+          node --check assets/app.js
+          node --check data/news.js
       - name: Archive the champion automatically once all 30 teams finish 82 games
         run: python scripts/finalize_if_complete.py
       - name: Save validated standings and league history
         run: |
-          if ! git diff --quiet -- data/standings.json data/standings.js data/history.json data/history.js data/snapshots.json data/snapshots.js; then
+          if ! git diff --quiet -- data/standings.json data/standings.js data/history.json data/history.js data/snapshots.json data/snapshots.js data/news.json data/news.js; then
             git config user.name 'nba-league-bot'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add data/standings.json data/standings.js data/history.json data/history.js data/snapshots.json data/snapshots.js
+            git add data/standings.json data/standings.js data/history.json data/history.js data/snapshots.json data/snapshots.js data/news.json data/news.js
             git commit -m 'Refresh NBA records and league history'
             git push
           else
