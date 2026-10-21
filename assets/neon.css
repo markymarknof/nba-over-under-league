@@ -273,3 +273,64 @@ body{background:radial-gradient(ellipse at 47% -13%,#12326d 0,transparent 42%),r
 .monster-empty p{max-width:320px}
 @media(max-width:900px){.league-pulse{grid-template-columns:repeat(2,minmax(0,1fr))}.pulse-monsters{grid-column:1/-1}}
 @media(max-width:560px){.monster-slatedate{font-size:9px}.monster-person strong{font-size:13px}.monster-person small{font-size:10px}.monster-leader{padding:8px 7px}.monster-leader>strong{font-size:24px}.monster-line{padding:10px 0}.monster-empty{min-height:100px}}
+
+
+/* v5: competition-first home screen. The champion trophy and fixed stat counters
+   live in archive / guide, not above the actual live competition. */
+.dashboard-intro{
+ display:flex;align-items:end;justify-content:space-between;gap:16px;
+ padding:8px 0 13px;margin:0;
+}
+.dashboard-intro .eyebrow{
+ margin:0 0 4px;font-size:10px;letter-spacing:.20em;color:#f8cc78;font-weight:850;
+}
+.dashboard-intro .intro-dot{color:#6da9ee;padding:0 4px}
+.dashboard-intro h1{
+ display:flex;align-items:center;gap:11px;
+ margin:0;font-family:Impact,"Arial Narrow",Inter,system-ui,sans-serif;
+ font-size:clamp(26px,3.5vw,43px);line-height:1.06;letter-spacing:.045em;color:#f3f7ff;
+ text-shadow:0 0 25px #2d7dd14b;
+}
+.dashboard-intro .heading-marker{height:30px;width:5px;flex:none}
+.dashboard-intro p:not(.eyebrow){
+ margin:7px 0 0;font-size:10px;letter-spacing:.11em;
+ color:#a9c2de;font-weight:800;
+}
+.dashboard-intro p strong{color:#fbc972}
+.swipe-hint{
+ flex:none;display:none;white-space:nowrap;
+ font-weight:850;font-size:9px;letter-spacing:.07em;color:#90b4e0;
+}
+.dashboard-intro + .mascot-grid{margin-top:0}
+.dashboard-intro + .mascot-grid + .league-pulse{margin-top:19px;margin-bottom:18px}
+.dashboard-intro + .mascot-grid ~ .arena-main-grid{margin-top:11px}
+@media(max-width:720px){
+ main{padding-top:8px}
+ .dashboard-intro{padding:6px 0 8px;gap:8px}
+ .dashboard-intro .eyebrow{font-size:9px;letter-spacing:.15em}
+ .dashboard-intro h1{font-size:clamp(25px,7vw,31px);gap:8px}
+ .dashboard-intro .heading-marker{height:25px;width:4px}
+ .dashboard-intro p:not(.eyebrow){font-size:9px;letter-spacing:.03em;margin:5px 0 0}
+ .swipe-hint{display:block;font-size:8px}
+ .dashboard-intro + .mascot-grid{
+  gap:9px;padding:2px 5px 12px;margin:0 -5px;
+  overscroll-behavior-x:contain;scroll-padding-inline:5px;
+ }
+ .dashboard-intro + .mascot-grid .mascot-card{
+  flex:0 0 clamp(137px,40vw,176px);
+  scroll-snap-align:start;
+ }
+ .dashboard-intro + .mascot-grid .mascot-art{height:134px}
+ .dashboard-intro + .mascot-grid .mascot-name{font-size:25px}
+ .dashboard-intro + .mascot-grid .mascot-bottom strong{font-size:18px}
+ .dashboard-intro + .mascot-grid + .league-pulse{margin-top:7px;margin-bottom:12px}
+ .pulse-card{min-width:0}
+}
+@media(max-width:390px){
+ .dashboard-intro h1{font-size:24px}
+ .dashboard-intro p:not(.eyebrow){font-size:8px}
+ .swipe-hint{font-size:7px}
+ .dashboard-intro + .mascot-grid .mascot-card{flex-basis:41vw}
+ .dashboard-intro + .mascot-grid .mascot-art{height:123px}
+ .dashboard-intro + .mascot-grid .mascot-name{font-size:23px}
+}
