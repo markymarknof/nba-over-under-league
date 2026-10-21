@@ -244,3 +244,32 @@ body{background:radial-gradient(ellipse at 47% -13%,#12326d 0,transparent 42%),r
 @media(max-width:1100px) and (min-width:901px){.stat-crowns{gap:5px}.stat-crown{padding:10px 6px}.stat-crown strong{font-size:22px}.stat-crown span{font-size:9px}.monster-identity strong{font-size:10px}.monster-identity{gap:5px}.monster-line-numbers b{font-size:13px}}
 @media(max-width:560px){.monster-night-date{font-size:8px}.stat-crowns{gap:7px;margin-bottom:12px}.stat-crown{padding:10px 7px;min-height:82px}.stat-crown strong{font-size:23px}.stat-crown strong i{font-size:9px}.stat-crown span{font-size:10px}.stat-crown small{font-size:8px}.monster-row{padding:10px 0}.monster-identity strong{font-size:12px}.monster-identity .team-mark{width:30px;height:30px;min-width:30px}.monster-line-numbers b{font-size:15px}.pulse-monsters .pulse-label{font-size:11px}.pulse-monsters .pulse-source{margin-top:11px}}
 @media(max-width:380px){.monster-identity .team-mark{width:24px;height:26px;min-width:24px}.monster-identity strong{font-size:10px}.monster-line-numbers b{font-size:13px}.monster-line-numbers{font-size:8px}.monster-identity{gap:5px}.stat-crown strong{font-size:21px}.stat-crown span{font-size:9px}}
+
+
+/* v4: real nightly NBA box-score monsters; replaces the headline card. */
+.league-pulse{grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.85fr)}
+.pulse-monsters{padding-bottom:17px}
+.pulse-monsters .pulse-label{margin-bottom:5px}
+.monster-slatedate{font-size:9px;font-weight:800;color:#a8bbd4;text-transform:uppercase;letter-spacing:.11em;padding:4px 0 7px}
+.monster-lines{display:grid;gap:1px}
+.monster-line{display:grid;grid-template-columns:22px minmax(0,1fr) 16px;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid #263c57;color:#fff}
+.monster-line:last-child{border-bottom:0}
+.monster-line:hover .monster-person strong{color:#ffcf7b}
+.monster-rank{display:flex;align-items:center;justify-content:center;width:21px;height:21px;border-radius:6px;background:#2c4060;color:#bde2ff;font-weight:850;font-size:11px}
+.monster-line:first-child .monster-rank{background:linear-gradient(140deg,#ffe4a6,#b77927);color:#12233d}
+.monster-person{display:grid;gap:2px;min-width:0}
+.monster-person strong{font-size:13px;font-weight:850;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.monster-person small{font-size:10px;color:#b3c6df;font-weight:650;white-space:normal;line-height:1.25}
+.monster-boxscore{color:#f5c779;font-size:18px}
+.monster-leaders{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:10px}
+.monster-leader{min-width:0;padding:9px 8px;border-radius:8px;background:#1830529c;border:1px solid #355273;display:flex;flex-direction:column;gap:3px}
+.monster-leader:hover{border-color:#ffd789}
+.monster-leader>small{color:#c2d7ef;font-size:8px;font-weight:850;letter-spacing:.08em}
+.monster-leader>strong{font-family:Impact,"Arial Narrow",system-ui,sans-serif;font-size:26px;color:#ffcd81;letter-spacing:.035em;line-height:1}
+.monster-leader>strong span{font-family:Inter,system-ui,sans-serif;font-size:9px;color:#afc4de;font-weight:850}
+.monster-leader>span{font-size:10px;color:#fff;font-weight:750;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.monster-empty{min-height:130px;display:flex;flex-direction:column;justify-content:center;gap:8px}
+.monster-empty strong{color:#e9f1ff;font-size:13px}
+.monster-empty p{max-width:320px}
+@media(max-width:900px){.league-pulse{grid-template-columns:repeat(2,minmax(0,1fr))}.pulse-monsters{grid-column:1/-1}}
+@media(max-width:560px){.monster-slatedate{font-size:9px}.monster-person strong{font-size:13px}.monster-person small{font-size:10px}.monster-leader{padding:8px 7px}.monster-leader>strong{font-size:24px}.monster-line{padding:10px 0}.monster-empty{min-height:100px}}
