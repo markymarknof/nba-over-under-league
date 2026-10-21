@@ -209,7 +209,7 @@ def main():
         old = json.loads(old_path.read_text(encoding="utf-8"))
     except (OSError, ValueError):
         old = {}
-    if old.get("gameDate", "") > selected_date:
+    if (old.get("gameDate") or "") > selected_date:
         print("Refusing to overwrite newer results with an older game date.")
         return
     # Avoid publishing a partial scrape over a complete digest from the same date.
