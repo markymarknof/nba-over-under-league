@@ -334,3 +334,64 @@ body{background:radial-gradient(ellipse at 47% -13%,#12326d 0,transparent 42%),r
  .dashboard-intro + .mascot-grid .mascot-art{height:123px}
  .dashboard-intro + .mascot-grid .mascot-name{font-size:23px}
 }
+
+/* v6 MOBILE HEADER: logo and last-update indicator occupy separate grid rows.
+   This prevents long update dates colliding with the league wordmark on phones. */
+@media (max-width: 600px) {
+  .site-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    align-content: center;
+    align-items: center;
+    gap: 5px;
+    height: auto;
+    min-height: 91px;
+    padding: 9px 0 8px;
+  }
+  .site-header .brand {
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+    gap: 9px;
+  }
+  .site-header .brand-symbol {
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+    border-radius: 8px;
+  }
+  .site-header .brand-label {
+    max-width: calc(100% - 45px);
+    min-width: 0;
+    font-size: 23px;
+    line-height: 1.03;
+    white-space: normal;
+    overflow-wrap: normal;
+  }
+  .site-header .brand-sub {
+    margin-top: 4px;
+    font-size: 7px;
+    letter-spacing: .14em;
+  }
+  .site-header .header-right {
+    grid-row: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+    gap: 0;
+  }
+  .site-header .header-season { display: none; }
+  .site-header .live-pill {
+    flex: none;
+    max-width: 100%;
+    white-space: nowrap;
+    font-size: 9px;
+    padding: 5px 10px;
+    letter-spacing: .02em;
+  }
+}
