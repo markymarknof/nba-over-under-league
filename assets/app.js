@@ -208,8 +208,7 @@
         ['06','Hall of Champions','Previous winners and their full bets are saved permanently in the site’s history data. A new season can be added without wiping earlier champions.']
       ].map(([n,title,desc])=>`<section class="guide-card panel"><div class="guide-number">${n} / THE RULES</div><h3>${title}</h3><p>${desc}</p></section>`).join('')}</div>
       ${note('<strong>Important:</strong> A team that starts 1–0 projects to 82 wins under the raw pace formula. Early-season scores can be very volatile, so treat the leaderboard as an indication rather than a prediction. The Hall of Champions only crowns a winner after the full season.')}
-      <div class="section-heading" style="margin-top:35px"><h2><span class="heading-marker"></span>Website status</h2></div>
-      <div class="wide-table-wrap"><table class="wide-table" style="min-width:450px"><tbody><tr><td>Hosting</td><td>GitHub Pages (static files)</td></tr><tr><td>Database / Blob</td><td>None</td></tr><tr><td>Scheduled sync</td><td>GitHub Actions</td></tr><tr><td>Score source</td><td>${html(standings.source||'Pending NBA data')}</td></tr><tr><td>Last successful update</td><td>${html(formatDate(standings.updatedAt))}</td></tr><tr><td>Personal accounts needed to view</td><td>None</td></tr></tbody></table></div>`;
+`;
   }
   function profilesList() {
     return `${pageHead('','THE PLAYERS','')}
