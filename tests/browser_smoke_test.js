@@ -44,5 +44,16 @@ withResults.updatedAt='2026-11-01T13:00:00Z';
 withResults.source='Test fixture';
 for(const r of Object.values(withResults.teams)){r.wins=10;r.losses=5;}
 if(!smoke('dashboard',withResults).includes('CURRENT LEADER'))throw Error('Live leaderboard failed');
-for (const route of ['profiles','profile/Blake','profile/Coz','profile/Mark','profile/Coby','profile/Andy','rankings','race','rivalry']) {const rendered=smoke(route);if(!rendered || !rendered.includes('O/U') && !rendered.includes('Blake') && !rendered.includes('Blake'.toUpperCase()))throw Error('Route broken: '+route)}
+for (const name of ['Blake','Coz','Mark','Coby','Andy']) {
+  const rendered=smoke('profile/'+name);
+  if(!rendered.includes('<h1>'+name.toUpperCase()+'</h1>') ||
+     (rendered.match(/class="pick-performance /g)||[]).length!==6)
+    throw Error('Player profile or six picks missing: '+name);
+}
+for (const [route, expected] of [
+  ['profiles','THE PLAYERS'],['rankings','POWER RANKINGS'],
+  ['race','CHAMPIONSHIP RACE'],['rivalry','HEAD-TO-HEAD']
+]) {
+  if(!smoke(route).includes(expected)) throw Error('Route broken: '+route);
+}
 console.log('PASS 14 views + profiles, 30 picks, historical archive, pre-season and live scoring');
