@@ -395,3 +395,20 @@ body{background:radial-gradient(ellipse at 47% -13%,#12326d 0,transparent 42%),r
     letter-spacing: .02em;
   }
 }
+
+/* v7: remove visual padding left by the redundant page descriptions. */
+.dashboard-intro{padding-top:5px;padding-bottom:11px}
+.dashboard-intro .eyebrow{font-size:10px;margin-bottom:3px}
+.page-header{margin-bottom:13px}
+.page-header .eyebrow:empty,.page-header .text-muted:empty{display:none}
+.draft-top{padding-top:14px;padding-bottom:14px}
+.pulse-empty{margin:16px 0 7px}
+.mascot-bottom small{letter-spacing:.045em}
+.ranking-bonus-grid:has(> .insight-card:nth-child(2):last-child){grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:720px){
+  .dashboard-intro{padding-top:3px;padding-bottom:8px}
+  .page-header{margin-bottom:10px}
+  .pulse-empty{margin:12px 0 6px}
+  .mascot-open{padding-top:6px;padding-bottom:6px}
+  .ranking-bonus-grid:has(> .insight-card:nth-child(2):last-child){grid-template-columns:repeat(2,minmax(0,1fr))}
+}
