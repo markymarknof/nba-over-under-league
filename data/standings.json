@@ -1,6 +1,6 @@
 {
   "season": 2027,
-  "updatedAt": "2026-10-22T07:05:02Z",
+  "updatedAt": "2026-10-23T07:02:40Z",
   "source": "ESPN standings (unofficial; see README)",
   "teams": {
     "ATL": {
@@ -25,7 +25,7 @@
     },
     "CLE": {
       "wins": 0,
-      "losses": 0
+      "losses": 1
     },
     "DAL": {
       "wins": 0,
@@ -33,7 +33,7 @@
     },
     "DEN": {
       "wins": 0,
-      "losses": 0
+      "losses": 1
     },
     "DET": {
       "wins": 1,
@@ -84,7 +84,7 @@
       "losses": 1
     },
     "OKC": {
-      "wins": 1,
+      "wins": 2,
       "losses": 0
     },
     "ORL": {
@@ -92,7 +92,7 @@
       "losses": 1
     },
     "PHI": {
-      "wins": 1,
+      "wins": 2,
       "losses": 0
     },
     "PHX": {
