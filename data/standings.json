@@ -1,10 +1,10 @@
 {
   "season": 2027,
-  "updatedAt": "2026-10-24T01:07:09Z",
+  "updatedAt": "2026-10-24T06:58:56Z",
   "source": "ESPN standings (unofficial; see README)",
   "teams": {
     "ATL": {
-      "wins": 1,
+      "wins": 2,
       "losses": 0
     },
     "BKN": {
@@ -12,12 +12,12 @@
       "losses": 1
     },
     "BOS": {
-      "wins": 0,
+      "wins": 1,
       "losses": 1
     },
     "CHA": {
       "wins": 1,
-      "losses": 0
+      "losses": 1
     },
     "CHI": {
       "wins": 1,
@@ -28,7 +28,7 @@
       "losses": 1
     },
     "DAL": {
-      "wins": 0,
+      "wins": 1,
       "losses": 1
     },
     "DEN": {
@@ -36,52 +36,52 @@
       "losses": 1
     },
     "DET": {
-      "wins": 1,
+      "wins": 2,
       "losses": 0
     },
     "GSW": {
       "wins": 0,
-      "losses": 1
+      "losses": 2
     },
     "HOU": {
-      "wins": 1,
+      "wins": 2,
       "losses": 0
     },
     "IND": {
       "wins": 1,
-      "losses": 0
+      "losses": 1
     },
     "LAC": {
       "wins": 1,
-      "losses": 0
+      "losses": 1
     },
     "LAL": {
-      "wins": 1,
+      "wins": 2,
       "losses": 0
     },
     "MEM": {
-      "wins": 1,
+      "wins": 2,
       "losses": 0
     },
     "MIA": {
       "wins": 0,
-      "losses": 1
+      "losses": 2
     },
     "MIL": {
       "wins": 0,
       "losses": 2
     },
     "MIN": {
-      "wins": 1,
+      "wins": 2,
       "losses": 0
     },
     "NOP": {
       "wins": 0,
-      "losses": 1
+      "losses": 2
     },
     "NYK": {
       "wins": 0,
-      "losses": 1
+      "losses": 2
     },
     "OKC": {
       "wins": 2,
@@ -89,7 +89,7 @@
     },
     "ORL": {
       "wins": 0,
-      "losses": 1
+      "losses": 2
     },
     "PHI": {
       "wins": 2,
@@ -100,28 +100,28 @@
       "losses": 1
     },
     "POR": {
-      "wins": 1,
+      "wins": 2,
       "losses": 0
     },
     "SAC": {
       "wins": 0,
-      "losses": 1
+      "losses": 2
     },
     "SAS": {
       "wins": 0,
-      "losses": 1
+      "losses": 2
     },
     "TOR": {
-      "wins": 1,
+      "wins": 2,
       "losses": 0
     },
     "UTA": {
-      "wins": 0,
+      "wins": 1,
       "losses": 1
     },
     "WAS": {
       "wins": 1,
-      "losses": 0
+      "losses": 1
     }
   }
 }
