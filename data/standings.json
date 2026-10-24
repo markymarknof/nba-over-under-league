@@ -1,6 +1,6 @@
 {
   "season": 2027,
-  "updatedAt": "2026-10-23T07:02:40Z",
+  "updatedAt": "2026-10-24T01:07:09Z",
   "source": "ESPN standings (unofficial; see README)",
   "teams": {
     "ATL": {
@@ -20,7 +20,7 @@
       "losses": 0
     },
     "CHI": {
-      "wins": 0,
+      "wins": 1,
       "losses": 1
     },
     "CLE": {
@@ -69,7 +69,7 @@
     },
     "MIL": {
       "wins": 0,
-      "losses": 1
+      "losses": 2
     },
     "MIN": {
       "wins": 1,

@@ -1,80 +1,80 @@
 {
-  "updatedAt": "2026-10-23T07:02:40Z",
-  "gameDate": "2026-10-22",
-  "gameCount": 2,
+  "updatedAt": "2026-10-24T01:07:09Z",
+  "gameDate": "2026-10-23",
+  "gameCount": 1,
   "source": "ESPN NBA box scores (unofficial)",
   "leaders": {
     "points": {
-      "name": "Donovan Mitchell",
-      "team": "CLE",
-      "gameId": "401909093",
-      "points": 32,
-      "rebounds": 10,
-      "assists": 3,
-      "steals": 2,
-      "blocks": 1
+      "name": "Tyler Herro",
+      "team": "MIL",
+      "gameId": "401909848",
+      "points": 34,
+      "rebounds": 5,
+      "assists": 4,
+      "steals": 1,
+      "blocks": 0
     },
     "rebounds": {
-      "name": "Chet Holmgren",
-      "team": "OKC",
-      "gameId": "401909094",
-      "points": 12,
-      "rebounds": 17,
-      "assists": 2,
-      "steals": 1,
-      "blocks": 4
+      "name": "Jalen Smith",
+      "team": "CHI",
+      "gameId": "401909848",
+      "points": 14,
+      "rebounds": 13,
+      "assists": 1,
+      "steals": 3,
+      "blocks": 0
     },
     "assists": {
-      "name": "Tyrese Maxey",
-      "team": "PHI",
-      "gameId": "401909093",
-      "points": 32,
-      "rebounds": 3,
-      "assists": 6,
-      "steals": 2,
+      "name": "Josh Giddey",
+      "team": "CHI",
+      "gameId": "401909848",
+      "points": 6,
+      "rebounds": 4,
+      "assists": 9,
+      "steals": 0,
       "blocks": 0
     }
   },
   "performers": [
     {
-      "name": "Donovan Mitchell",
-      "team": "CLE",
-      "gameId": "401909093",
-      "points": 32,
-      "rebounds": 10,
-      "assists": 3,
-      "steals": 2,
-      "blocks": 1
-    },
-    {
-      "name": "Tyrese Maxey",
-      "team": "PHI",
-      "gameId": "401909093",
-      "points": 32,
-      "rebounds": 3,
-      "assists": 6,
-      "steals": 2,
+      "name": "Tyler Herro",
+      "team": "MIL",
+      "gameId": "401909848",
+      "points": 34,
+      "rebounds": 5,
+      "assists": 4,
+      "steals": 1,
       "blocks": 0
     },
     {
-      "name": "Chet Holmgren",
-      "team": "OKC",
-      "gameId": "401909094",
-      "points": 12,
-      "rebounds": 17,
-      "assists": 2,
-      "steals": 1,
-      "blocks": 4
+      "name": "Jalen Smith",
+      "team": "CHI",
+      "gameId": "401909848",
+      "points": 14,
+      "rebounds": 13,
+      "assists": 1,
+      "steals": 3,
+      "blocks": 0
     },
     {
-      "name": "LeBron James",
-      "team": "PHI",
-      "gameId": "401909093",
-      "points": 17,
-      "rebounds": 10,
+      "name": "Jaime Jaquez Jr.",
+      "team": "MIL",
+      "gameId": "401909848",
+      "points": 19,
+      "rebounds": 11,
       "assists": 5,
-      "steals": 3,
-      "blocks": 1
+      "steals": 0,
+      "blocks": 0
+    },
+    {
+      "name": "Caleb Wilson",
+      "team": "CHI",
+      "gameId": "401909848",
+      "points": 21,
+      "rebounds": 6,
+      "assists": 1,
+      "steals": 1,
+      "blocks": 2
     }
   ]
 }
