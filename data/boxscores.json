@@ -1,80 +1,80 @@
 {
-  "updatedAt": "2026-10-25T00:56:58Z",
+  "updatedAt": "2026-10-25T07:00:22Z",
   "gameDate": "2026-10-24",
-  "gameCount": 1,
+  "gameCount": 8,
   "source": "ESPN NBA box scores (unofficial)",
   "leaders": {
     "points": {
-      "name": "Brandon Miller",
-      "team": "CHA",
-      "gameId": "401909853",
-      "points": 34,
+      "name": "Devin Booker",
+      "team": "PHX",
+      "gameId": "401909860",
+      "points": 43,
       "rebounds": 7,
-      "assists": 4,
+      "assists": 7,
       "steals": 0,
       "blocks": 1
     },
     "rebounds": {
-      "name": "Naz Reid",
-      "team": "CHA",
-      "gameId": "401909853",
-      "points": 23,
-      "rebounds": 9,
-      "assists": 0,
-      "steals": 0,
-      "blocks": 2
+      "name": "Nikola Jokic",
+      "team": "DEN",
+      "gameId": "401909859",
+      "points": 35,
+      "rebounds": 15,
+      "assists": 10,
+      "steals": 2,
+      "blocks": 3
     },
     "assists": {
-      "name": "Davion Mitchell",
-      "team": "MIA",
-      "gameId": "401909853",
-      "points": 22,
-      "rebounds": 1,
-      "assists": 10,
-      "steals": 1,
+      "name": "Jalen Johnson",
+      "team": "ATL",
+      "gameId": "401909856",
+      "points": 26,
+      "rebounds": 9,
+      "assists": 16,
+      "steals": 2,
       "blocks": 0
     }
   },
   "performers": [
     {
-      "name": "Brandon Miller",
-      "team": "CHA",
-      "gameId": "401909853",
-      "points": 34,
+      "name": "Nikola Jokic",
+      "team": "DEN",
+      "gameId": "401909859",
+      "points": 35,
+      "rebounds": 15,
+      "assists": 10,
+      "steals": 2,
+      "blocks": 3
+    },
+    {
+      "name": "Devin Booker",
+      "team": "PHX",
+      "gameId": "401909860",
+      "points": 43,
       "rebounds": 7,
-      "assists": 4,
+      "assists": 7,
       "steals": 0,
       "blocks": 1
     },
     {
-      "name": "Bam Adebayo",
-      "team": "MIA",
-      "gameId": "401909853",
-      "points": 20,
-      "rebounds": 8,
-      "assists": 4,
-      "steals": 1,
-      "blocks": 1
-    },
-    {
-      "name": "Davion Mitchell",
-      "team": "MIA",
-      "gameId": "401909853",
-      "points": 22,
-      "rebounds": 1,
-      "assists": 10,
-      "steals": 1,
+      "name": "Jalen Johnson",
+      "team": "ATL",
+      "gameId": "401909856",
+      "points": 26,
+      "rebounds": 9,
+      "assists": 16,
+      "steals": 2,
       "blocks": 0
     },
     {
-      "name": "Naz Reid",
-      "team": "CHA",
-      "gameId": "401909853",
-      "points": 23,
-      "rebounds": 9,
-      "assists": 0,
-      "steals": 0,
-      "blocks": 2
+      "name": "Jamal Murray",
+      "team": "DEN",
+      "gameId": "401909859",
+      "points": 42,
+      "rebounds": 3,
+      "assists": 6,
+      "steals": 1,
+      "blocks": 1
     }
   ]
 }
