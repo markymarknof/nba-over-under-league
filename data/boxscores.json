@@ -1,80 +1,80 @@
 {
-  "updatedAt": "2026-10-26T07:08:44Z",
-  "gameDate": "2026-10-25",
-  "gameCount": 7,
+  "updatedAt": "2026-10-27T07:04:03Z",
+  "gameDate": "2026-10-26",
+  "gameCount": 9,
   "source": "ESPN NBA box scores (unofficial)",
   "leaders": {
     "points": {
-      "name": "Luka Doncic",
-      "team": "LAL",
-      "gameId": "401909861",
-      "points": 52,
-      "rebounds": 8,
-      "assists": 10,
+      "name": "Anthony Edwards",
+      "team": "MIN",
+      "gameId": "401909869",
+      "points": 47,
+      "rebounds": 4,
+      "assists": 4,
       "steals": 2,
-      "blocks": 0
+      "blocks": 2
     },
     "rebounds": {
-      "name": "Domantas Sabonis",
-      "team": "SAC",
-      "gameId": "401909867",
-      "points": 15,
-      "rebounds": 15,
-      "assists": 3,
-      "steals": 2,
-      "blocks": 0
+      "name": "Rudy Gobert",
+      "team": "MIN",
+      "gameId": "401909869",
+      "points": 5,
+      "rebounds": 20,
+      "assists": 2,
+      "steals": 1,
+      "blocks": 1
     },
     "assists": {
-      "name": "Darius Garland",
-      "team": "LAC",
-      "gameId": "401909865",
-      "points": 16,
-      "rebounds": 4,
+      "name": "Cooper Flagg",
+      "team": "DAL",
+      "gameId": "401909871",
+      "points": 29,
+      "rebounds": 6,
       "assists": 11,
-      "steals": 0,
-      "blocks": 0
+      "steals": 5,
+      "blocks": 3
     }
   },
   "performers": [
     {
-      "name": "Luka Doncic",
-      "team": "LAL",
-      "gameId": "401909861",
-      "points": 52,
-      "rebounds": 8,
-      "assists": 10,
-      "steals": 2,
-      "blocks": 0
-    },
-    {
-      "name": "Cade Cunningham",
-      "team": "DET",
-      "gameId": "401909866",
-      "points": 26,
-      "rebounds": 8,
-      "assists": 8,
+      "name": "Anthony Edwards",
+      "team": "MIN",
+      "gameId": "401909869",
+      "points": 47,
+      "rebounds": 4,
+      "assists": 4,
       "steals": 2,
       "blocks": 2
     },
     {
-      "name": "Shai Gilgeous-Alexander",
-      "team": "OKC",
-      "gameId": "401909865",
-      "points": 34,
+      "name": "Cooper Flagg",
+      "team": "DAL",
+      "gameId": "401909871",
+      "points": 29,
       "rebounds": 6,
-      "assists": 5,
-      "steals": 2,
+      "assists": 11,
+      "steals": 5,
+      "blocks": 3
+    },
+    {
+      "name": "Giannis Antetokounmpo",
+      "team": "MIA",
+      "gameId": "401909871",
+      "points": 29,
+      "rebounds": 14,
+      "assists": 11,
+      "steals": 0,
       "blocks": 1
     },
     {
-      "name": "Zach LaVine",
-      "team": "SAC",
-      "gameId": "401909867",
-      "points": 37,
-      "rebounds": 2,
-      "assists": 5,
-      "steals": 2,
-      "blocks": 0
+      "name": "Alperen Sengun",
+      "team": "HOU",
+      "gameId": "401909874",
+      "points": 29,
+      "rebounds": 9,
+      "assists": 9,
+      "steals": 6,
+      "blocks": 1
     }
   ]
 }
