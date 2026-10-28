@@ -1,80 +1,80 @@
 {
-  "updatedAt": "2026-10-27T07:04:03Z",
-  "gameDate": "2026-10-26",
-  "gameCount": 9,
+  "updatedAt": "2026-10-28T07:15:59Z",
+  "gameDate": "2026-10-27",
+  "gameCount": 4,
   "source": "ESPN NBA box scores (unofficial)",
   "leaders": {
     "points": {
-      "name": "Anthony Edwards",
-      "team": "MIN",
-      "gameId": "401909869",
-      "points": 47,
-      "rebounds": 4,
-      "assists": 4,
-      "steals": 2,
-      "blocks": 2
-    },
-    "rebounds": {
-      "name": "Rudy Gobert",
-      "team": "MIN",
-      "gameId": "401909869",
-      "points": 5,
-      "rebounds": 20,
-      "assists": 2,
-      "steals": 1,
+      "name": "Luka Doncic",
+      "team": "LAL",
+      "gameId": "401909880",
+      "points": 41,
+      "rebounds": 5,
+      "assists": 9,
+      "steals": 0,
       "blocks": 1
     },
+    "rebounds": {
+      "name": "Karl-Anthony Towns",
+      "team": "NYK",
+      "gameId": "401909878",
+      "points": 27,
+      "rebounds": 20,
+      "assists": 3,
+      "steals": 0,
+      "blocks": 0
+    },
     "assists": {
-      "name": "Cooper Flagg",
-      "team": "DAL",
-      "gameId": "401909871",
-      "points": 29,
-      "rebounds": 6,
-      "assists": 11,
-      "steals": 5,
-      "blocks": 3
+      "name": "Luka Doncic",
+      "team": "LAL",
+      "gameId": "401909880",
+      "points": 41,
+      "rebounds": 5,
+      "assists": 9,
+      "steals": 0,
+      "blocks": 1
     }
   },
   "performers": [
     {
-      "name": "Anthony Edwards",
-      "team": "MIN",
-      "gameId": "401909869",
-      "points": 47,
-      "rebounds": 4,
-      "assists": 4,
-      "steals": 2,
-      "blocks": 2
-    },
-    {
-      "name": "Cooper Flagg",
-      "team": "DAL",
-      "gameId": "401909871",
-      "points": 29,
-      "rebounds": 6,
-      "assists": 11,
-      "steals": 5,
-      "blocks": 3
-    },
-    {
-      "name": "Giannis Antetokounmpo",
-      "team": "MIA",
-      "gameId": "401909871",
-      "points": 29,
-      "rebounds": 14,
-      "assists": 11,
+      "name": "Luka Doncic",
+      "team": "LAL",
+      "gameId": "401909880",
+      "points": 41,
+      "rebounds": 5,
+      "assists": 9,
       "steals": 0,
       "blocks": 1
     },
     {
-      "name": "Alperen Sengun",
-      "team": "HOU",
-      "gameId": "401909874",
-      "points": 29,
-      "rebounds": 9,
-      "assists": 9,
-      "steals": 6,
+      "name": "Jayson Tatum",
+      "team": "BOS",
+      "gameId": "401909877",
+      "points": 40,
+      "rebounds": 5,
+      "assists": 8,
+      "steals": 0,
       "blocks": 1
+    },
+    {
+      "name": "Victor Wembanyama",
+      "team": "SAS",
+      "gameId": "401909879",
+      "points": 29,
+      "rebounds": 10,
+      "assists": 2,
+      "steals": 2,
+      "blocks": 5
+    },
+    {
+      "name": "Karl-Anthony Towns",
+      "team": "NYK",
+      "gameId": "401909878",
+      "points": 27,
+      "rebounds": 20,
+      "assists": 3,
+      "steals": 0,
+      "blocks": 0
     }
   ]
 }
