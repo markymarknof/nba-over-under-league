@@ -1,80 +1,80 @@
 {
-  "updatedAt": "2026-10-29T19:07:50Z",
-  "gameDate": "2026-10-28",
-  "gameCount": 12,
+  "updatedAt": "2026-10-30T07:16:00Z",
+  "gameDate": "2026-10-29",
+  "gameCount": 3,
   "source": "ESPN NBA box scores (unofficial)",
   "leaders": {
     "points": {
-      "name": "Stephen Curry",
-      "team": "GSW",
-      "gameId": "401909888",
-      "points": 44,
-      "rebounds": 8,
-      "assists": 6,
-      "steals": 2,
+      "name": "Darius Acuff Jr.",
+      "team": "SAC",
+      "gameId": "401909894",
+      "points": 34,
+      "rebounds": 6,
+      "assists": 14,
+      "steals": 1,
       "blocks": 0
     },
     "rebounds": {
-      "name": "Giannis Antetokounmpo",
-      "team": "MIA",
-      "gameId": "401909881",
-      "points": 24,
-      "rebounds": 18,
-      "assists": 3,
-      "steals": 1,
+      "name": "Domantas Sabonis",
+      "team": "SAC",
+      "gameId": "401909894",
+      "points": 9,
+      "rebounds": 15,
+      "assists": 7,
+      "steals": 2,
       "blocks": 1
     },
     "assists": {
-      "name": "Andrew Nembhard",
-      "team": "IND",
-      "gameId": "401909884",
-      "points": 18,
-      "rebounds": 3,
+      "name": "Darius Acuff Jr.",
+      "team": "SAC",
+      "gameId": "401909894",
+      "points": 34,
+      "rebounds": 6,
       "assists": 14,
-      "steals": 0,
+      "steals": 1,
       "blocks": 0
     }
   },
   "performers": [
     {
-      "name": "Stephen Curry",
-      "team": "GSW",
-      "gameId": "401909888",
-      "points": 44,
+      "name": "Jeremiah Fears",
+      "team": "NOP",
+      "gameId": "401909894",
+      "points": 22,
       "rebounds": 8,
-      "assists": 6,
+      "assists": 13,
       "steals": 2,
-      "blocks": 0
+      "blocks": 4
     },
     {
-      "name": "Victor Wembanyama",
-      "team": "SAS",
-      "gameId": "401909890",
-      "points": 36,
-      "rebounds": 14,
-      "assists": 5,
-      "steals": 3,
-      "blocks": 2
-    },
-    {
-      "name": "Nikola Jokic",
-      "team": "DEN",
-      "gameId": "401909889",
-      "points": 21,
-      "rebounds": 13,
-      "assists": 10,
+      "name": "Darius Acuff Jr.",
+      "team": "SAC",
+      "gameId": "401909894",
+      "points": 34,
+      "rebounds": 6,
+      "assists": 14,
       "steals": 1,
       "blocks": 0
     },
     {
-      "name": "Scottie Barnes",
-      "team": "TOR",
-      "gameId": "401909885",
-      "points": 28,
-      "rebounds": 6,
-      "assists": 4,
-      "steals": 3,
-      "blocks": 2
+      "name": "Cameron Boozer",
+      "team": "MEM",
+      "gameId": "401909895",
+      "points": 18,
+      "rebounds": 12,
+      "assists": 12,
+      "steals": 0,
+      "blocks": 0
+    },
+    {
+      "name": "Onyeka Okongwu",
+      "team": "ATL",
+      "gameId": "401909893",
+      "points": 29,
+      "rebounds": 12,
+      "assists": 2,
+      "steals": 1,
+      "blocks": 1
     }
   ]
 }
