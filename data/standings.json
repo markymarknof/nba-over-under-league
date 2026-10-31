@@ -1,6 +1,6 @@
 {
   "season": 2027,
-  "updatedAt": "2026-10-30T07:16:00Z",
+  "updatedAt": "2026-10-31T07:10:29Z",
   "source": "ESPN standings (unofficial; see README)",
   "teams": {
     "ATL": {
@@ -9,62 +9,62 @@
     },
     "BKN": {
       "wins": 0,
-      "losses": 4
+      "losses": 5
     },
     "BOS": {
-      "wins": 3,
+      "wins": 4,
       "losses": 1
     },
     "CHA": {
       "wins": 3,
-      "losses": 2
+      "losses": 3
     },
     "CHI": {
       "wins": 1,
-      "losses": 4
+      "losses": 5
     },
     "CLE": {
       "wins": 3,
       "losses": 2
     },
     "DAL": {
-      "wins": 3,
+      "wins": 4,
       "losses": 2
     },
     "DEN": {
-      "wins": 2,
+      "wins": 3,
       "losses": 2
     },
     "DET": {
-      "wins": 4,
+      "wins": 5,
       "losses": 1
     },
     "GSW": {
-      "wins": 2,
+      "wins": 3,
       "losses": 3
     },
     "HOU": {
       "wins": 5,
-      "losses": 0
+      "losses": 1
     },
     "IND": {
       "wins": 2,
-      "losses": 3
+      "losses": 4
     },
     "LAC": {
       "wins": 1,
-      "losses": 3
+      "losses": 4
     },
     "LAL": {
       "wins": 4,
-      "losses": 1
+      "losses": 2
     },
     "MEM": {
       "wins": 5,
       "losses": 0
     },
     "MIA": {
-      "wins": 1,
+      "wins": 2,
       "losses": 4
     },
     "MIL": {
@@ -72,7 +72,7 @@
       "losses": 4
     },
     "MIN": {
-      "wins": 3,
+      "wins": 4,
       "losses": 2
     },
     "NOP": {
@@ -81,23 +81,23 @@
     },
     "NYK": {
       "wins": 2,
-      "losses": 3
+      "losses": 4
     },
     "OKC": {
       "wins": 4,
       "losses": 1
     },
     "ORL": {
-      "wins": 1,
+      "wins": 2,
       "losses": 3
     },
     "PHI": {
-      "wins": 4,
+      "wins": 5,
       "losses": 1
     },
     "PHX": {
       "wins": 1,
-      "losses": 2
+      "losses": 3
     },
     "POR": {
       "wins": 3,
@@ -113,14 +113,14 @@
     },
     "TOR": {
       "wins": 3,
-      "losses": 1
+      "losses": 2
     },
     "UTA": {
       "wins": 1,
       "losses": 4
     },
     "WAS": {
-      "wins": 2,
+      "wins": 3,
       "losses": 3
     }
   }
