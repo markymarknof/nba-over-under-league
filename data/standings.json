@@ -1,6 +1,6 @@
 {
   "season": 2027,
-  "updatedAt": "2026-10-31T07:10:29Z",
+  "updatedAt": "2026-11-01T01:25:34Z",
   "source": "ESPN standings (unofficial; see README)",
   "teams": {
     "ATL": {
@@ -17,7 +17,7 @@
     },
     "CHA": {
       "wins": 3,
-      "losses": 3
+      "losses": 4
     },
     "CHI": {
       "wins": 1,
@@ -92,7 +92,7 @@
       "losses": 3
     },
     "PHI": {
-      "wins": 5,
+      "wins": 6,
       "losses": 1
     },
     "PHX": {
@@ -100,7 +100,7 @@
       "losses": 3
     },
     "POR": {
-      "wins": 3,
+      "wins": 4,
       "losses": 1
     },
     "SAC": {
@@ -117,7 +117,7 @@
     },
     "UTA": {
       "wins": 1,
-      "losses": 4
+      "losses": 5
     },
     "WAS": {
       "wins": 3,
