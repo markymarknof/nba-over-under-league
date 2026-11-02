@@ -1,6 +1,6 @@
 {
   "season": 2027,
-  "updatedAt": "2026-11-02T01:24:53Z",
+  "updatedAt": "2026-11-02T07:41:40Z",
   "source": "ESPN standings (unofficial; see README)",
   "teams": {
     "ATL": {
@@ -40,7 +40,7 @@
       "losses": 1
     },
     "GSW": {
-      "wins": 3,
+      "wins": 4,
       "losses": 3
     },
     "HOU": {
@@ -53,10 +53,10 @@
     },
     "LAC": {
       "wins": 1,
-      "losses": 4
+      "losses": 5
     },
     "LAL": {
-      "wins": 4,
+      "wins": 5,
       "losses": 2
     },
     "MEM": {
@@ -113,7 +113,7 @@
     },
     "TOR": {
       "wins": 3,
-      "losses": 2
+      "losses": 3
     },
     "UTA": {
       "wins": 1,

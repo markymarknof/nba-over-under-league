@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-11-02T01:24:53Z",
+  "updatedAt": "2026-11-02T07:41:41Z",
   "gameDate": "2026-11-01",
-  "gameCount": 2,
+  "gameCount": 4,
   "source": "ESPN NBA box scores (unofficial)",
   "leaders": {
     "points": {
-      "name": "Jayson Tatum",
-      "team": "BOS",
-      "gameId": "401909903",
-      "points": 32,
-      "rebounds": 4,
-      "assists": 7,
-      "steals": 0,
-      "blocks": 2
+      "name": "Luka Doncic",
+      "team": "LAL",
+      "gameId": "401909906",
+      "points": 45,
+      "rebounds": 15,
+      "assists": 6,
+      "steals": 5,
+      "blocks": 1
     },
     "rebounds": {
-      "name": "Day'Ron Sharpe",
-      "team": "BKN",
-      "gameId": "401909904",
-      "points": 15,
-      "rebounds": 13,
-      "assists": 4,
-      "steals": 0,
-      "blocks": 0
+      "name": "Luka Doncic",
+      "team": "LAL",
+      "gameId": "401909906",
+      "points": 45,
+      "rebounds": 15,
+      "assists": 6,
+      "steals": 5,
+      "blocks": 1
     },
     "assists": {
       "name": "Franz Wagner",
@@ -37,6 +37,26 @@
   },
   "performers": [
     {
+      "name": "Luka Doncic",
+      "team": "LAL",
+      "gameId": "401909906",
+      "points": 45,
+      "rebounds": 15,
+      "assists": 6,
+      "steals": 5,
+      "blocks": 1
+    },
+    {
+      "name": "Yaxel Lendeborg",
+      "team": "GSW",
+      "gameId": "401909905",
+      "points": 37,
+      "rebounds": 4,
+      "assists": 6,
+      "steals": 1,
+      "blocks": 0
+    },
+    {
       "name": "Jayson Tatum",
       "team": "BOS",
       "gameId": "401909903",
@@ -47,33 +67,13 @@
       "blocks": 2
     },
     {
-      "name": "Paul George",
-      "team": "BOS",
-      "gameId": "401909903",
-      "points": 17,
+      "name": "Scottie Barnes",
+      "team": "TOR",
+      "gameId": "401909906",
+      "points": 29,
       "rebounds": 6,
-      "assists": 8,
+      "assists": 5,
       "steals": 2,
-      "blocks": 2
-    },
-    {
-      "name": "Anthony Black",
-      "team": "ORL",
-      "gameId": "401909903",
-      "points": 23,
-      "rebounds": 8,
-      "assists": 3,
-      "steals": 2,
-      "blocks": 0
-    },
-    {
-      "name": "Michael Porter Jr.",
-      "team": "BKN",
-      "gameId": "401909904",
-      "points": 23,
-      "rebounds": 9,
-      "assists": 3,
-      "steals": 1,
       "blocks": 0
     }
   ]
