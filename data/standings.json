@@ -1,6 +1,6 @@
 {
   "season": 2027,
-  "updatedAt": "2026-11-01T07:18:08Z",
+  "updatedAt": "2026-11-02T01:24:53Z",
   "source": "ESPN standings (unofficial; see README)",
   "teams": {
     "ATL": {
@@ -8,11 +8,11 @@
       "losses": 4
     },
     "BKN": {
-      "wins": 0,
+      "wins": 1,
       "losses": 5
     },
     "BOS": {
-      "wins": 4,
+      "wins": 5,
       "losses": 1
     },
     "CHA": {
@@ -49,7 +49,7 @@
     },
     "IND": {
       "wins": 2,
-      "losses": 4
+      "losses": 5
     },
     "LAC": {
       "wins": 1,
@@ -89,7 +89,7 @@
     },
     "ORL": {
       "wins": 2,
-      "losses": 3
+      "losses": 4
     },
     "PHI": {
       "wins": 6,
