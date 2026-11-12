@@ -1,80 +1,80 @@
 {
-  "updatedAt": "2026-11-11T07:32:04Z",
-  "gameDate": "2026-11-10",
-  "gameCount": 6,
+  "updatedAt": "2026-11-12T07:36:47Z",
+  "gameDate": "2026-11-11",
+  "gameCount": 10,
   "source": "ESPN NBA box scores (unofficial)",
   "leaders": {
     "points": {
-      "name": "Paul George",
-      "team": "BOS",
-      "gameId": "401909961",
-      "points": 36,
-      "rebounds": 5,
+      "name": "Franz Wagner",
+      "team": "ORL",
+      "gameId": "401909973",
+      "points": 38,
+      "rebounds": 8,
       "assists": 1,
-      "steals": 0,
+      "steals": 1,
       "blocks": 0
     },
     "rebounds": {
-      "name": "Karl-Anthony Towns",
-      "team": "NYK",
-      "gameId": "401909960",
-      "points": 21,
-      "rebounds": 16,
+      "name": "Jarrett Allen",
+      "team": "CLE",
+      "gameId": "401909967",
+      "points": 11,
+      "rebounds": 14,
       "assists": 3,
-      "steals": 2,
+      "steals": 1,
       "blocks": 1
     },
     "assists": {
-      "name": "Deni Avdija",
-      "team": "POR",
-      "gameId": "401909965",
-      "points": 24,
+      "name": "Dylan Harper",
+      "team": "SAS",
+      "gameId": "401909969",
+      "points": 18,
       "rebounds": 6,
-      "assists": 8,
-      "steals": 1,
-      "blocks": 0
+      "assists": 10,
+      "steals": 4,
+      "blocks": 1
     }
   },
   "performers": [
     {
-      "name": "Franz Wagner",
-      "team": "ORL",
-      "gameId": "401909964",
-      "points": 33,
-      "rebounds": 7,
-      "assists": 7,
+      "name": "Victor Wembanyama",
+      "team": "SAS",
+      "gameId": "401909969",
+      "points": 32,
+      "rebounds": 9,
+      "assists": 1,
       "steals": 2,
-      "blocks": 0
+      "blocks": 5
     },
     {
-      "name": "Anthony Black",
-      "team": "ORL",
-      "gameId": "401909964",
-      "points": 26,
-      "rebounds": 7,
-      "assists": 5,
+      "name": "Deni Avdija",
+      "team": "POR",
+      "gameId": "401909975",
+      "points": 28,
+      "rebounds": 3,
+      "assists": 6,
       "steals": 4,
-      "blocks": 0
+      "blocks": 2
     },
     {
-      "name": "Karl-Anthony Towns",
-      "team": "NYK",
-      "gameId": "401909960",
-      "points": 21,
-      "rebounds": 16,
-      "assists": 3,
-      "steals": 2,
+      "name": "Nikola Jokic",
+      "team": "DEN",
+      "gameId": "401909970",
+      "points": 27,
+      "rebounds": 11,
+      "assists": 8,
+      "steals": 1,
       "blocks": 1
     },
     {
-      "name": "Darius Acuff Jr.",
-      "team": "SAC",
-      "gameId": "401909964",
-      "points": 29,
-      "rebounds": 4,
-      "assists": 6,
-      "steals": 2,
-      "blocks": 0
+      "name": "Dylan Harper",
+      "team": "SAS",
+      "gameId": "401909969",
+      "points": 18,
+      "rebounds": 6,
+      "assists": 10,
+      "steals": 4,
+      "blocks": 1
     }
   ]
 }
