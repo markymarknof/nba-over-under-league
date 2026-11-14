@@ -1,80 +1,80 @@
 {
-  "updatedAt": "2026-11-13T07:34:22Z",
-  "gameDate": "2026-11-12",
-  "gameCount": 4,
+  "updatedAt": "2026-11-14T06:33:19Z",
+  "gameDate": "2026-11-13",
+  "gameCount": 9,
   "source": "ESPN NBA box scores (unofficial)",
   "leaders": {
     "points": {
-      "name": "Cade Cunningham",
-      "team": "DET",
-      "gameId": "401909977",
-      "points": 52,
-      "rebounds": 5,
-      "assists": 11,
+      "name": "Alperen Sengun",
+      "team": "HOU",
+      "gameId": "401909301",
+      "points": 43,
+      "rebounds": 12,
+      "assists": 5,
       "steals": 1,
       "blocks": 1
     },
     "rebounds": {
-      "name": "Anthony Davis",
-      "team": "WSH",
-      "gameId": "401909977",
-      "points": 30,
-      "rebounds": 15,
-      "assists": 4,
+      "name": "Isaiah Hartenstein",
+      "team": "OKC",
+      "gameId": "401909304",
+      "points": 21,
+      "rebounds": 16,
+      "assists": 6,
       "steals": 1,
       "blocks": 0
     },
     "assists": {
-      "name": "Trae Young",
-      "team": "WSH",
-      "gameId": "401909977",
-      "points": 37,
-      "rebounds": 2,
-      "assists": 14,
+      "name": "Davion Mitchell",
+      "team": "MIA",
+      "gameId": "401909298",
+      "points": 22,
+      "rebounds": 5,
+      "assists": 17,
       "steals": 0,
-      "blocks": 0
+      "blocks": 1
     }
   },
   "performers": [
     {
-      "name": "Cade Cunningham",
-      "team": "DET",
-      "gameId": "401909977",
-      "points": 52,
-      "rebounds": 5,
-      "assists": 11,
+      "name": "Alperen Sengun",
+      "team": "HOU",
+      "gameId": "401909301",
+      "points": 43,
+      "rebounds": 12,
+      "assists": 5,
       "steals": 1,
       "blocks": 1
     },
     {
-      "name": "Ausar Thompson",
-      "team": "DET",
-      "gameId": "401909977",
-      "points": 17,
+      "name": "Jalen Johnson",
+      "team": "ATL",
+      "gameId": "401909299",
+      "points": 27,
       "rebounds": 11,
-      "assists": 11,
-      "steals": 3,
-      "blocks": 3
-    },
-    {
-      "name": "Trae Young",
-      "team": "WSH",
-      "gameId": "401909977",
-      "points": 37,
-      "rebounds": 2,
-      "assists": 14,
-      "steals": 0,
-      "blocks": 0
-    },
-    {
-      "name": "Anthony Davis",
-      "team": "WSH",
-      "gameId": "401909977",
-      "points": 30,
-      "rebounds": 15,
-      "assists": 4,
+      "assists": 10,
       "steals": 1,
       "blocks": 0
+    },
+    {
+      "name": "Franz Wagner",
+      "team": "ORL",
+      "gameId": "401909297",
+      "points": 35,
+      "rebounds": 9,
+      "assists": 12,
+      "steals": 1,
+      "blocks": 1
+    },
+    {
+      "name": "Josh Giddey",
+      "team": "CHI",
+      "gameId": "401909299",
+      "points": 15,
+      "rebounds": 10,
+      "assists": 14,
+      "steals": 0,
+      "blocks": 3
     }
   ]
 }
