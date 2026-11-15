@@ -1,6 +1,6 @@
 {
   "season": 2027,
-  "updatedAt": "2026-11-14T06:33:18Z",
+  "updatedAt": "2026-11-15T06:41:17Z",
   "source": "ESPN standings (unofficial; see README)",
   "teams": {
     "ATL": {
@@ -9,7 +9,7 @@
     },
     "BKN": {
       "wins": 3,
-      "losses": 8
+      "losses": 9
     },
     "BOS": {
       "wins": 10,
@@ -20,24 +20,24 @@
       "losses": 8
     },
     "CHI": {
-      "wins": 2,
+      "wins": 3,
       "losses": 9
     },
     "CLE": {
-      "wins": 6,
+      "wins": 7,
       "losses": 7
     },
     "DAL": {
       "wins": 7,
-      "losses": 5
+      "losses": 6
     },
     "DEN": {
-      "wins": 6,
+      "wins": 7,
       "losses": 4
     },
     "DET": {
       "wins": 8,
-      "losses": 3
+      "losses": 4
     },
     "GSW": {
       "wins": 8,
@@ -60,11 +60,11 @@
       "losses": 2
     },
     "MEM": {
-      "wins": 8,
+      "wins": 9,
       "losses": 4
     },
     "MIA": {
-      "wins": 6,
+      "wins": 7,
       "losses": 6
     },
     "MIL": {
@@ -73,11 +73,11 @@
     },
     "MIN": {
       "wins": 9,
-      "losses": 3
+      "losses": 4
     },
     "NOP": {
       "wins": 4,
-      "losses": 9
+      "losses": 10
     },
     "NYK": {
       "wins": 6,
