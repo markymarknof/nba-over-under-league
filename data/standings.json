@@ -1,10 +1,10 @@
 {
   "season": 2027,
-  "updatedAt": "2026-11-15T06:41:17Z",
+  "updatedAt": "2026-11-16T06:39:00Z",
   "source": "ESPN standings (unofficial; see README)",
   "teams": {
     "ATL": {
-      "wins": 7,
+      "wins": 8,
       "losses": 6
     },
     "BKN": {
@@ -12,12 +12,12 @@
       "losses": 9
     },
     "BOS": {
-      "wins": 10,
+      "wins": 11,
       "losses": 2
     },
     "CHA": {
       "wins": 4,
-      "losses": 8
+      "losses": 9
     },
     "CHI": {
       "wins": 3,
@@ -29,7 +29,7 @@
     },
     "DAL": {
       "wins": 7,
-      "losses": 6
+      "losses": 7
     },
     "DEN": {
       "wins": 7,
@@ -44,19 +44,19 @@
       "losses": 5
     },
     "HOU": {
-      "wins": 10,
+      "wins": 11,
       "losses": 3
     },
     "IND": {
       "wins": 5,
-      "losses": 8
+      "losses": 9
     },
     "LAC": {
-      "wins": 3,
+      "wins": 4,
       "losses": 8
     },
     "LAL": {
-      "wins": 11,
+      "wins": 12,
       "losses": 2
     },
     "MEM": {
@@ -69,7 +69,7 @@
     },
     "MIL": {
       "wins": 1,
-      "losses": 12
+      "losses": 13
     },
     "MIN": {
       "wins": 9,
@@ -80,11 +80,11 @@
       "losses": 10
     },
     "NYK": {
-      "wins": 6,
+      "wins": 7,
       "losses": 6
     },
     "OKC": {
-      "wins": 8,
+      "wins": 9,
       "losses": 5
     },
     "ORL": {
@@ -92,12 +92,12 @@
       "losses": 7
     },
     "PHI": {
-      "wins": 10,
+      "wins": 11,
       "losses": 3
     },
     "PHX": {
       "wins": 5,
-      "losses": 6
+      "losses": 7
     },
     "POR": {
       "wins": 9,
@@ -105,23 +105,23 @@
     },
     "SAC": {
       "wins": 1,
-      "losses": 11
+      "losses": 12
     },
     "SAS": {
-      "wins": 11,
+      "wins": 12,
       "losses": 2
     },
     "TOR": {
       "wins": 5,
-      "losses": 7
+      "losses": 8
     },
     "UTA": {
       "wins": 1,
-      "losses": 12
+      "losses": 13
     },
     "WAS": {
       "wins": 4,
-      "losses": 9
+      "losses": 10
     }
   }
 }
