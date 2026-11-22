@@ -1,6 +1,6 @@
 {
   "season": 2027,
-  "updatedAt": "2026-11-21T07:17:11Z",
+  "updatedAt": "2026-11-22T06:57:15Z",
   "source": "ESPN standings (unofficial; see README)",
   "teams": {
     "ATL": {
@@ -13,7 +13,7 @@
     },
     "BOS": {
       "wins": 11,
-      "losses": 4
+      "losses": 5
     },
     "CHA": {
       "wins": 4,
@@ -28,7 +28,7 @@
       "losses": 8
     },
     "DAL": {
-      "wins": 8,
+      "wins": 9,
       "losses": 7
     },
     "DEN": {
@@ -53,7 +53,7 @@
     },
     "LAC": {
       "wins": 4,
-      "losses": 10
+      "losses": 11
     },
     "LAL": {
       "wins": 14,
@@ -61,7 +61,7 @@
     },
     "MEM": {
       "wins": 12,
-      "losses": 4
+      "losses": 5
     },
     "MIA": {
       "wins": 9,
@@ -69,18 +69,18 @@
     },
     "MIL": {
       "wins": 1,
-      "losses": 15
+      "losses": 16
     },
     "MIN": {
-      "wins": 11,
+      "wins": 12,
       "losses": 5
     },
     "NOP": {
       "wins": 5,
-      "losses": 12
+      "losses": 13
     },
     "NYK": {
-      "wins": 9,
+      "wins": 10,
       "losses": 6
     },
     "OKC": {
@@ -92,7 +92,7 @@
       "losses": 8
     },
     "PHI": {
-      "wins": 13,
+      "wins": 14,
       "losses": 3
     },
     "PHX": {
@@ -101,14 +101,14 @@
     },
     "POR": {
       "wins": 10,
-      "losses": 5
+      "losses": 6
     },
     "SAC": {
-      "wins": 1,
+      "wins": 2,
       "losses": 14
     },
     "SAS": {
-      "wins": 13,
+      "wins": 14,
       "losses": 3
     },
     "TOR": {
