@@ -1,10 +1,10 @@
 {
   "season": 2027,
-  "updatedAt": "2026-11-22T06:57:15Z",
+  "updatedAt": "2026-11-23T07:46:53Z",
   "source": "ESPN standings (unofficial; see README)",
   "teams": {
     "ATL": {
-      "wins": 10,
+      "wins": 11,
       "losses": 6
     },
     "BKN": {
@@ -13,7 +13,7 @@
     },
     "BOS": {
       "wins": 11,
-      "losses": 5
+      "losses": 6
     },
     "CHA": {
       "wins": 4,
@@ -21,26 +21,26 @@
     },
     "CHI": {
       "wins": 4,
-      "losses": 11
+      "losses": 12
     },
     "CLE": {
       "wins": 9,
       "losses": 8
     },
     "DAL": {
-      "wins": 9,
+      "wins": 10,
       "losses": 7
     },
     "DEN": {
-      "wins": 9,
+      "wins": 10,
       "losses": 5
     },
     "DET": {
       "wins": 10,
-      "losses": 5
+      "losses": 6
     },
     "GSW": {
-      "wins": 8,
+      "wins": 9,
       "losses": 8
     },
     "HOU": {
@@ -49,7 +49,7 @@
     },
     "IND": {
       "wins": 5,
-      "losses": 11
+      "losses": 12
     },
     "LAC": {
       "wins": 4,
@@ -64,7 +64,7 @@
       "losses": 5
     },
     "MIA": {
-      "wins": 9,
+      "wins": 10,
       "losses": 6
     },
     "MIL": {
@@ -80,16 +80,16 @@
       "losses": 13
     },
     "NYK": {
-      "wins": 10,
+      "wins": 11,
       "losses": 6
     },
     "OKC": {
       "wins": 10,
-      "losses": 6
+      "losses": 7
     },
     "ORL": {
       "wins": 7,
-      "losses": 8
+      "losses": 9
     },
     "PHI": {
       "wins": 14,
@@ -117,10 +117,10 @@
     },
     "UTA": {
       "wins": 3,
-      "losses": 14
+      "losses": 15
     },
     "WAS": {
-      "wins": 6,
+      "wins": 7,
       "losses": 11
     }
   }
