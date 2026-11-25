@@ -1,80 +1,80 @@
 {
-  "updatedAt": "2026-11-24T09:59:19Z",
-  "gameDate": "2026-11-23",
-  "gameCount": 10,
+  "updatedAt": "2026-11-25T08:43:12Z",
+  "gameDate": "2026-11-24",
+  "gameCount": 3,
   "source": "ESPN NBA box scores (unofficial)",
   "leaders": {
     "points": {
-      "name": "Shai Gilgeous-Alexander",
-      "team": "OKC",
-      "gameId": "401910038",
-      "points": 38,
-      "rebounds": 5,
-      "assists": 7,
-      "steals": 0,
-      "blocks": 1
-    },
-    "rebounds": {
-      "name": "Donovan Clingan",
-      "team": "POR",
-      "gameId": "401910037",
-      "points": 15,
-      "rebounds": 18,
-      "assists": 5,
-      "steals": 0,
+      "name": "Jayson Tatum",
+      "team": "BOS",
+      "gameId": "401909315",
+      "points": 41,
+      "rebounds": 6,
+      "assists": 8,
+      "steals": 1,
       "blocks": 2
     },
+    "rebounds": {
+      "name": "Anthony Davis",
+      "team": "WSH",
+      "gameId": "401909315",
+      "points": 33,
+      "rebounds": 13,
+      "assists": 1,
+      "steals": 2,
+      "blocks": 1
+    },
     "assists": {
-      "name": "Stephon Castle",
-      "team": "SAS",
-      "gameId": "401910045",
-      "points": 28,
-      "rebounds": 8,
-      "assists": 11,
+      "name": "Cooper Flagg",
+      "team": "DAL",
+      "gameId": "401909316",
+      "points": 24,
+      "rebounds": 6,
+      "assists": 12,
       "steals": 0,
       "blocks": 0
     }
   },
   "performers": [
     {
-      "name": "Scottie Barnes",
-      "team": "TOR",
-      "gameId": "401910039",
-      "points": 31,
-      "rebounds": 5,
-      "assists": 8,
-      "steals": 2,
-      "blocks": 4
-    },
-    {
-      "name": "Jaden McDaniels",
-      "team": "MIN",
-      "gameId": "401910040",
-      "points": 34,
-      "rebounds": 10,
-      "assists": 6,
-      "steals": 2,
-      "blocks": 0
-    },
-    {
-      "name": "Shai Gilgeous-Alexander",
-      "team": "OKC",
-      "gameId": "401910038",
-      "points": 38,
-      "rebounds": 5,
-      "assists": 7,
-      "steals": 0,
-      "blocks": 1
-    },
-    {
-      "name": "Tyler Herro",
-      "team": "MIL",
-      "gameId": "401910039",
-      "points": 32,
+      "name": "Jayson Tatum",
+      "team": "BOS",
+      "gameId": "401909315",
+      "points": 41,
       "rebounds": 6,
       "assists": 8,
       "steals": 1,
+      "blocks": 2
+    },
+    {
+      "name": "Anthony Davis",
+      "team": "WSH",
+      "gameId": "401909315",
+      "points": 33,
+      "rebounds": 13,
+      "assists": 1,
+      "steals": 2,
       "blocks": 1
+    },
+    {
+      "name": "Paul George",
+      "team": "BOS",
+      "gameId": "401909315",
+      "points": 28,
+      "rebounds": 4,
+      "assists": 9,
+      "steals": 1,
+      "blocks": 0
+    },
+    {
+      "name": "Cooper Flagg",
+      "team": "DAL",
+      "gameId": "401909316",
+      "points": 24,
+      "rebounds": 6,
+      "assists": 12,
+      "steals": 0,
+      "blocks": 0
     }
   ]
 }
