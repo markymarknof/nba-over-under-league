@@ -1,80 +1,80 @@
 {
-  "updatedAt": "2026-11-26T08:28:20Z",
-  "gameDate": "2026-11-25",
-  "gameCount": 9,
+  "updatedAt": "2026-11-28T07:55:55Z",
+  "gameDate": "2026-11-27",
+  "gameCount": 11,
   "source": "ESPN NBA box scores (unofficial)",
   "leaders": {
     "points": {
-      "name": "Victor Wembanyama",
-      "team": "SAS",
-      "gameId": "401909325",
-      "points": 44,
-      "rebounds": 16,
-      "assists": 3,
-      "steals": 1,
-      "blocks": 2
+      "name": "Jamal Murray",
+      "team": "DEN",
+      "gameId": "401909334",
+      "points": 36,
+      "rebounds": 5,
+      "assists": 1,
+      "steals": 3,
+      "blocks": 0
     },
     "rebounds": {
-      "name": "Victor Wembanyama",
-      "team": "SAS",
-      "gameId": "401909325",
-      "points": 44,
-      "rebounds": 16,
+      "name": "Giannis Antetokounmpo",
+      "team": "MIA",
+      "gameId": "401909326",
+      "points": 22,
+      "rebounds": 23,
       "assists": 3,
-      "steals": 1,
-      "blocks": 2
+      "steals": 0,
+      "blocks": 0
     },
     "assists": {
-      "name": "LeBron James",
-      "team": "PHI",
-      "gameId": "401909317",
-      "points": 25,
-      "rebounds": 10,
-      "assists": 12,
-      "steals": 1,
+      "name": "Nikola Jokic",
+      "team": "DEN",
+      "gameId": "401909334",
+      "points": 17,
+      "rebounds": 9,
+      "assists": 15,
+      "steals": 2,
       "blocks": 0
     }
   },
   "performers": [
     {
+      "name": "Cooper Flagg",
+      "team": "DAL",
+      "gameId": "401909332",
+      "points": 34,
+      "rebounds": 7,
+      "assists": 8,
+      "steals": 5,
+      "blocks": 4
+    },
+    {
+      "name": "Immanuel Quickley",
+      "team": "TOR",
+      "gameId": "401909329",
+      "points": 24,
+      "rebounds": 10,
+      "assists": 14,
+      "steals": 1,
+      "blocks": 0
+    },
+    {
       "name": "Victor Wembanyama",
       "team": "SAS",
-      "gameId": "401909325",
-      "points": 44,
+      "gameId": "401909333",
+      "points": 25,
       "rebounds": 16,
-      "assists": 3,
-      "steals": 1,
+      "assists": 2,
+      "steals": 4,
       "blocks": 2
     },
     {
-      "name": "LeBron James",
-      "team": "PHI",
-      "gameId": "401909317",
-      "points": 25,
-      "rebounds": 10,
-      "assists": 12,
-      "steals": 1,
-      "blocks": 0
-    },
-    {
-      "name": "Alperen Sengun",
-      "team": "HOU",
-      "gameId": "401909323",
-      "points": 23,
-      "rebounds": 11,
-      "assists": 11,
-      "steals": 0,
-      "blocks": 0
-    },
-    {
-      "name": "Giannis Antetokounmpo",
-      "team": "MIA",
-      "gameId": "401909317",
-      "points": 32,
-      "rebounds": 14,
-      "assists": 4,
+      "name": "Nikola Jokic",
+      "team": "DEN",
+      "gameId": "401909334",
+      "points": 17,
+      "rebounds": 9,
+      "assists": 15,
       "steals": 2,
-      "blocks": 1
+      "blocks": 0
     }
   ]
 }
